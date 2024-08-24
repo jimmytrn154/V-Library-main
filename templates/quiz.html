@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{url_for('static', filename='/Image/favicon.ico')}}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='navbar_update.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='quiz.css') }}">
+    <title>Quiz</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <img class="logo" src="{{url_for('static', filename='/Image/v-lib_logo.png')}}" width="50px" alt="">
+        <ul>
+            <li><a class="nav-list" href="{{ url_for('dashboard') }}">Trang Chủ</a></li>
+            <li><a class="nav-list" href="{{ url_for('about_us') }}">Về Chúng Tôi</a></li>
+            <li><a class="nav-list" href="{{ url_for('sgk') }}">Sách Giáo Khoa</a></li>
+            <li><a class="nav-list" href="{{ url_for('thu_vien') }}">Thư Viện</a></li>
+            <li><a class="nav-list" href="https://mancupsea.wixsite.com/v-library/blank-2">Video</a></li>
+            <li><a class="nav-list" href="{{ url_for('quiz') }}">Quiz</a></li>
+        </ul>
+        <a href="{{ url_for('home') }}"><i class="fa-solid fa-user"></i></a>
+        <label for="check" class="bars">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </nav>
+    <div class="content">
+        <img src="{{url_for('static', filename='/Image/coming_soon.jpg')}}" alt="background-image" class="background-image">
+    </div>
+   
+    <!--  -->
+
+    <footer>
+        <div class="footer-content">
+            <h3>V-LIBRARY</h3>
+            <p>Với mong muốn đem trang sách đến với các em, đồng thời hỗ trợ cung cấp nguồn tài liệu chính thống tới thầy cô, "V-Library" là giải pháp hiện đại cho những vấn đề xưa cũ.</p>
+            <ul class="socials">
+                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100090439011915"><img src="{{url_for('static', filename='/Image/facebook-icon.png')}}" width="30px"></a></li>
+                <li><a href="#"><img src="{{url_for('static', filename='/Image/instagram-icon.png')}}" width="30px"></a></li>
+                <li><a href="#"><img src="{{url_for('static', filename='/Image/youtube-icon.png')}}" width="30px"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

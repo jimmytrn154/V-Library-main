@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Fraunces' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='video.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='tabs.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='footer.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="{{ url_for('dashboard') }}"><img src="{{url_for('static', filename='/Image/v-lib_logo.png')}}" width="50px"></a>
+        </div>
+        <!--  -->
+        <nav>
+            <ul>
+                <li><a class="nav-list" href="{{ url_for('dashboard') }}">Trang Chủ</a></li>
+                <li><a class="nav-list" href="{{ url_for('sgk') }}">Sách Giáo Khoa</a></li>
+                <li><a class="nav-list" href="{{ url_for('thu_vien') }}">Thư Viện</a></li>
+                <li><a class="nav-list" href="{{ url_for('video') }}">Video</a></li>
+                <li><a class="nav-list" href="{{ url_for('quiz') }}">Quiz</a></li>
+                <li><a class="nav-list" href="{{ url_for('about_us') }}">Về Chúng Tôi</a></li>
+            </ul>
+        </nav>
+        <!--  -->
+        <div class="account">
+            <a href="/index"><img src="{{url_for('static', filename='/Image/account-icon.png')}}" width="50px"></a>
+        </div>
+    </div>
+    <!-- -------------------------------------------------------------------------------------------- -->
+
+    <!-- <div class="video-container">
+        <div class="video">
+            <div class="video-child video-img vat-ly-img">
+    
+            </div>
+            <div class="video-child">
+                <div class="video-content">
+                    <h2>Video Vật Lý</h2>
+                    <p>Dành cho mọi lứa tuổi.</p>
+                    <a href="../HTML/sach-truyen.html"><input type="button" value="Xem thêm"></a>
+                </div>
+            </div>
+        </div>
+        <div class="video">
+            <div class="video-child video-img hoa-hoc-img">
+    
+            </div>
+            <div class="video-child">
+                <div class="video-content">
+                    <h2>Sách Truyện</h2>
+                    <p>Dành cho mọi lứa tuổi.</p>
+                    <a href="../HTML/sach-truyen.html"><input type="button" value="Xem thêm"></a>
+                </div>
+            </div>
+        </div>
+        <div class="video">
+            <div class="video-child video-img sinh-hoc-img">
+    
+            </div>
+            <div class="video-child">
+                <div class="video-content">
+                    <h2>Sách Truyện</h2>
+                    <p>Dành cho mọi lứa tuổi.</p>
+                    <a href="../HTML/sach-truyen.html"><input type="button" value="Xem thêm"></a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="tabs-container">
+        <div class="tabs">
+            <div class="tab-header">
+                <div class="active">Vat Ly</div>
+                <div>Hoa Hoc</div>
+                <div>Sinh Hoc</div>
+            </div>
+            <div class="tab-content">
+                <div class="active">
+                    <h1>Vật Lý</h1>
+                    <p>Vật Lý</p>
+                    <div class="tab-button">
+                        <a href="{{ url_for('physics') }}"><button>Đi thôi!</button></a>
+                    </div>
+                </div>
+                <div>
+                    <h1>Hóa Học</h1>
+                    <p>Hóa Học</p>
+                    <p>Sách cho giáo viên và sách cho học sinh</p>
+                    <div class="tab-button">
+                        <a href="../HTML/video-hoa-hoc.html"><button>Đi thôi!</button></a>
+                    </div>
+                </div>
+                <div>
+                    <h1>Sinh Học</h1>
+                    <p>Sinh Học</p>
+                    <p>Sách cho giáo viên và sách cho học sinh</p>
+                    <div class="tab-button">
+                        <a href="../HTML/video-sinh-hoc.html"><button>Đi thôi!</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- -------------------------------------------------------------------------------------------- -->
+
+    <div class="footer">
+        <footer>
+            <div class="footer-content">
+                <h3>V-LIBRARY</h3>
+                <p>Với mong muốn đem trang sách đến với các em, đồng thời hỗ trợ cung cấp nguồn tài liệu chính thống tới thầy cô, "V-Library" là giải pháp hiện đại cho những vấn đề xưa cũ.</p>
+                <ul class="socials">
+                    <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100090439011915"><img src="{{url_for('static', filename='/Image/facebook-icon.png')}}" width="30px"></a></li>
+                    <li><a href="#"><img src="{{url_for('static', filename='/Image/instagram-icon.png')}}" width="30px"></a></li>
+                    <li><a href="#"><img src="{{url_for('static', filename='/Image/youtube-icon.png')}}" width="30px"></a></li>
+                </ul>
+            </div>
+        </footer>
+</body>
+<script src="{{ url_for('static', filename='tabs.js') }}"></script>
+</html>

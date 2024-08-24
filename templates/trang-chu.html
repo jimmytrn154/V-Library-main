@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{url_for('static', filename='/Image/favicon.ico')}}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='navbar_update.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='auto-slider.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='tabs_update.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='trang-chu.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='footer.css') }}">
+    <title>V-Library</title>
+    
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <img class="logo" src="{{url_for('static', filename='/Image/v-lib_logo.png')}}" width="50px" alt="">
+        <ul>
+            <li><a class="nav-list" href="{{ url_for('dashboard') }}">Trang Chủ</a></li>
+            <li><a class="nav-list" href="{{ url_for('about_us') }}">Về Chúng Tôi</a></li>
+            <li><a class="nav-list" href="{{ url_for('sgk') }}">Sách Giáo Khoa</a></li>
+            <li><a class="nav-list" href="{{ url_for('thu_vien') }}">Thư Viện</a></li>
+            <li><a class="nav-list" href="https://mancupsea.wixsite.com/v-library/blank-2">Video</a></li>
+            <li><a class="nav-list" href="{{ url_for('quiz') }}">Quiz</a></li>
+        </ul>
+        <a href="{{ url_for('home') }}"><i class="fa-solid fa-user"></i></a>
+        <label for="check" class="bars">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </nav>
+    
+    <!-- -------------------------------------------------------------------------------------- -->
+
+    <!-- -------------------------------------------------------------------------------------- -->
+
+    <div class="introduction">
+        <div class="left">
+            <h1>V - LIBRARY, xin chào!</h1>
+            <h3>Đây là nơi giúp các bạn học tập.</h3>
+            <h3>Chúc các bạn tìm được những cuốn sách mình mong muốn.</h3>
+        </div>
+        <div class="right">
+            <img src=" {{url_for('static', filename='/Image/v-lib_logo.png')}}" alt="">
+        </div>
+    </div>
+
+
+
+    <center>
+    <div class="slider-container">
+        <div class="wrapper">
+            <img class="slider-img" src="{{url_for('static', filename='/Image/v-lib-img-1.jpg')}}">
+            <img class="slider-img" src="{{url_for('static', filename='/Image/v-lib-img-2.jpg')}}">
+            <img class="slider-img" src="{{url_for('static', filename='/Image/v-lib-img-3.jpg')}}">
+            <img class="slider-img" src="{{url_for('static', filename='/Image/v-lib-img-4.jpg')}}">
+            <img class="slider-img" src="{{url_for('static', filename='/Image/charity-1.jpg')}}">
+            <img class="slider-img" src="{{url_for('static', filename='/Image/charity-2.jpg')}}">
+            <img class="slider-img" src="{{url_for('static', filename='/Image/charity-3.jpg')}}">
+            <img class="slider-img" src="{{url_for('static', filename='/Image/charity-4.jpg')}}">
+            <img class="slider-img" src="{{url_for('static', filename='/Image/charity-5.jpg')}}">
+        </div>
+    </div>
+    </center>
+
+    
+
+    <div class="sach-giao-khoa">
+        <h2 class="title">Những Loại Sách Giáo Khoa Nổi Bật</h2>
+        <div class="list">
+                <a class="sgk ket-noi-tri-thuc" href="{{ url_for('kntt') }}"><img src="{{url_for('static', filename='/Image/ket-noi-tri-thuc.png')}}" alt="" width="300px"></a>
+                <a class="sgk canh-dieu" href="{{ url_for('kite') }}"><img src="{{url_for('static', filename='/Image/canh-dieu-logo.png')}}" alt="" width="250px"></a>
+                <a class="sgk chan-troi-sang-tao" href="{{ url_for('ctst') }}"><img src="{{url_for('static', filename='/Image/chan-troi-sang-tao.png')}}" alt="" width="300px"></a>
+        </div>
+    </div>
+
+
+    <div class="tabs-container">
+        <div class="tabs">
+            <div class="tab-header">
+                <div class="active">Sách Truyện</div>
+                <div>Sách Học Thuật</div>
+            </div>
+            <div class="tab-content">
+                <div class="tab tab-sach-truyen active">
+                    <h1>Sách Truyện</h1>
+                    <div class="ghi-chu">
+                        <p><i class="fa-solid fa-chevron-right"></i> Dành cho mọi lứa tuổi.</p>
+                    </div>
+                    <div class="tab-button">
+                        <a href="{{ url_for('comics') }}"><button>Đi thôi!</button></a>
+                    </div>
+                </div>
+                <div class="tab tab-sach-hoc-thuat">
+                    <h1>Sách Học Thuật</h1>
+                    <div class="ghi-chu">
+                        <p><i class="fa-solid fa-chevron-right"></i> Chia làm 2 loại</p>
+                        <p><i class="fa-solid fa-chevron-right"></i> Sách cho giáo viên và sách cho học sinh</p>
+                    </div>
+                    <div class="tab-button">
+                        <a href="{{ url_for('sht') }}"><button>Đi Thôi</button></a>
+                        <!-- <button>Sách Học Sinh</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <h2 class="title">Những điểm trường đã ủng hộ</h2>
+    <div class="Status">
+        <div class="circular-image-container">
+            <div class="circular-image">
+                <img src="{{url_for('static', filename='/Image/charity-1.jpg')}}" alt="Circular Image 1">
+            </div>
+            <p class="image-caption">Trường Tự Do</p>
+        </div>
+        <div class="circular-image-container">
+            <div class="circular-image">
+                <img src="{{url_for('static', filename='/Image/charity-6.jpg')}}" alt="Circular Image 2">
+            </div>
+            <p class="image-caption">Trường tiểu học Bình Thuận</p>
+        </div>
+    </div>
+    
+    
+    <footer>
+        <div class="footer-content">
+            <h3>V-LIBRARY</h3>
+            <p>Với mong muốn đem trang sách đến với các em, đồng thời hỗ trợ cung cấp nguồn tài liệu chính thống tới thầy cô, "V-Library" là giải pháp hiện đại cho những vấn đề xưa cũ.</p>
+            <ul class="socials">
+                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100090439011915"><img src="{{url_for('static', filename='/Image/facebook-icon.png')}}" width="30px"></a></li>
+                <li><a href="#"><img src="{{url_for('static', filename='/Image/instagram-icon.png')}}" width="30px"></a></li>
+                <li><a href="#"><img src="{{url_for('static', filename='/Image/youtube-icon.png')}}" width="30px"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script src="{{ url_for('static', filename='tabs.js') }}"></script>

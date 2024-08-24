@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='ve-chung-toi.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='members.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='navbar_update.css') }}">
+    <link rel="icon" href="{{url_for('static', filename='/Image/favicon.ico')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='footer.css') }}">
+    <title>About Us</title>
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <img class="logo" src="{{url_for('static', filename='/Image/v-lib_logo.png')}}" width="50px" alt="">
+    <ul>
+        <li><a class="nav-list" href="{{ url_for('dashboard') }}">Trang Chủ</a></li>
+        <li><a class="nav-list" href="{{ url_for('about_us') }}">Về Chúng Tôi</a></li>
+        <li><a class="nav-list" href="{{ url_for('sgk') }}">Sách Giáo Khoa</a></li>
+        <li><a class="nav-list" href="{{ url_for('thu_vien') }}">Thư Viện</a></li>
+        <li><a class="nav-list" href="https://mancupsea.wixsite.com/v-library/blank-2">Video</a></li>
+        <li><a class="nav-list" href="{{ url_for('quiz') }}">Quiz</a></li>
+    </ul>
+    <a href="{{ url_for('home') }}"><i class="fa-solid fa-user"></i></a>
+    <label for="check" class="bars">
+        <i class="fa-solid fa-bars"></i>
+    </label>
+  </nav>
+
+    <!-- ------------------------------- -->
+
+    <center>
+    <div class="container">
+        <p>Đúng như tên gọi của dự án, "V-Library" là viết tắt của "Virtual Library" - thư viện số.</p>
+        
+        <p>Với mong muốn đem trang sách đến với các em, đồng thời hỗ trợ cung cấp nguồn tài liệu chính thống tới thầy cô,<br>"V-Library" là giải pháp hiện đại cho những vấn đề xưa cũ.</p>
+        <p>Sách ebook được sưu tầm từ Internet. Bản quyền sách thuộc về Tác giả và Nhà xuất bản</p>
+    </div>
+    </center>
+
+    <!-- ------------------------ -->
+    <center>
+    <div class="wrapper">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <ul class="carousel">
+          <li class="card">
+            <div class="img"><img src="{{url_for('static', filename='/Image/Boss Minh.png')}}" alt="img" draggable="false"></div>
+            <h2>Nguyễn Trần Nhật Minh</h2>
+            <span>Founder</span>
+          </li>`
+          <li class="card">
+            <div class="img"><img src="{{url_for('static', filename='/Image/Trang.png')}}" alt="img" draggable="false"></div>
+            <h2>Nguyễn Minh Trang</h2>
+            <span>Co-Founder</span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="{{url_for('static', filename='/Image/Duc.png')}}" alt="img" draggable="false"></div>
+            <h2>Hoàng Bùi Việt Đức</h2>
+            <span>Trưởng Ban Lập Trình</span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="{{url_for('static', filename='/Image/Thuy Linh.jpeg')}}" alt="img" draggable="false"></div>
+            <h2>Nguyễn Vũ Thuỳ Linh</h2>
+            <span>Quản Lý Nhân Sự</span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="{{url_for('static', filename='/Image/Kin.png')}}" alt="img" draggable="false"></div>
+            <h2>Đỗ Đàm Thăng</h2>
+            <span>Quản Lý Dữ Liệu</span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="{{url_for('static', filename='/Image/Linh.png')}}" alt="img" draggable="false"></div>
+            <h2>Nguyễn Ngọc Linh</h2>
+            <span>Đối Ngoại</span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="{{url_for('static', filename='/Image/Vu.png')}}" alt="img" draggable="false"></div>
+            <h2>Nguyễn Duy Nguyên Vũ</h2>
+            <span>Quản Lý Tài Chính</span>
+          </li>
+        </ul>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
+    </center>
+
+      <!-- ---------------------------- -->
+
+      <footer>
+        <div class="footer-content">
+            <h3>V-LIBRARY</h3>
+            <p>Với mong muốn đem trang sách đến với các em, đồng thời hỗ trợ cung cấp nguồn tài liệu chính thống tới thầy cô, "V-Library" là giải pháp hiện đại cho những vấn đề xưa cũ.</p>
+            <ul class="socials">
+                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100090439011915"><img src="{{url_for('static', filename='/Image/facebook-icon.png')}}" width="30px"></a></li>
+                <li><a href="#"><img src="{{url_for('static', filename='/Image/instagram-icon.png')}}" width="30px"></a></li>
+                <li><a href="#"><img src="{{url_for('static', filename='/Image/youtube-icon.png')}}" width="30px"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script src="{{url_for('static', filename='members.js')}}"></script>
+</html>

@@ -1,0 +1,205 @@
+body {
+  background-color: #FFFDEC;
+}
+@media (max-width: 750px) {
+  .library-container {
+      width:100px;
+  }
+}
+.library-container {
+  margin: 100px 0 100px 0;
+  /* position: relative; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.genre {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* align-items: center;
+  justify-content: center; */
+  margin: 20px;
+}
+
+.genre-child {
+  background-color: #4E4742;
+  color: white;
+  height: 300px;
+  width: 350px;
+  /* display: block; */
+  text-align: center;
+  /* top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); */
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.genre-child .genre-content {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 20px;
+}
+
+.genre-content h2 {
+  margin-bottom: 20px;
+}
+
+.genre-content p {
+  /* font-size: 15px; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.genre-content input {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  border: black 1px solid;
+  height: 40px;
+  width: 150px;
+  align-items: flex-start;
+  justify-content: end;
+  transition: 0.2s;
+}
+
+.genre-content input:hover {
+  background-color: black;
+  color: white;
+  border: white 1px solid;
+  transition: 0.2s;
+}
+
+.genre-img {
+  background-position: center;
+  height: 300px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: white; */
+}
+
+.sach-truyen-img {
+  background-image: url('Image/fairy-tale-img.jpeg');
+}
+
+.sach-hoc-thuat-img {
+  background-image: url('Image/academicb.jpg');
+}
+
+.sach-bo-tro-img {
+  background-image: url('Image/sach-bo-tro.png');
+}
+
+.sht-btn {
+  display: flex;
+}
+
+.sach_truyen {
+  display: flex;
+}
+
+.sgk-img-contain {
+  background-position: center;
+  height: 300px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.sgk-canh-dieu1 {
+  background-image: url('Image/canh-dieu-toan-1.jpeg');
+}
+.sgk-canh-dieu2 {
+  background-image: url('Image/canh-dieu-am-nhac-2.jpg');
+}
+.sgk-canh-dieu3 {
+  background-image: url('Image/canh-dieu-cong-nghe-3.jpeg');
+}
+.sgk-canh-dieu4 {
+  background-image: url('Image/canh-dieu-dao-duc-4.png');
+}
+.sgk-canh-dieu6 {
+  background-image: url('Image/canh-dieu-tin-hoc-6.png');
+}
+.sgk-canh-dieu7 {
+  background-image: url('Image/canh-dieu-giao-duc-cong-dan-7.jpeg');
+}
+.sgk-canh-dieu8 {
+  background-image: url('Image/canh-dieu-lich-su-va-dia-li-8.jpeg');
+}
+.sgk-ket-noi-tri-thuc1 {
+  background-image: url('Image/ket-noi-tri-thuc-am-nhac-1.png');
+}
+.sgk-ket-noi-tri-thuc2 {
+  background-image: url('Image/ket-noi-tri-thuc-dao-duc-2.png');
+}
+.sgk-ket-noi-tri-thuc3 {
+  background-image: url('Image/ket-noi-tri-thuc-cong-nghe-3.png');
+}
+.sgk-ket-noi-tri-thuc4 {
+  background-image: url('Image/ket-noi-tri-thuc-khoa-hoc-4.png');
+}
+
+.sgk-ket-noi-tri-thuc6 {
+  background-image: url('Image/ket-noi-tri-thuc-giao-duc-the-chat-6.jpeg');
+}
+.sgk-ket-noi-tri-thuc7 {
+  background-image: url('Image/ket-noi-tri-thuc-khoa-hoc-tu-nhien-7.png');
+}
+.sgk-ket-noi-tri-thuc8 {
+  background-image: url('Image/ket-noi-tri-thuc-lich-su-va-dia-li-8.jpeg');
+}
+.sgk-chan-troi-sang-tao1 {
+  background-image: url('Image/chan-troi-sang-tao-tieng-viet-1-tap-1.jpeg');
+}
+.sgk-chan-troi-sang-tao2 {
+  background-image: url('Image/chan-troi-sang-tao-giao-duc-the-chat-2.jpeg');
+}
+.sgk-chan-troi-sang-tao3 {
+  background-image: url('Image/chan-troi-sang-tao-am-nhac-2.png');
+}
+.sgk-chan-troi-sang-tao4 {
+  background-image: url('Image/chan-troi-sang-tao-lich-su-va-dia-ly-4.png');
+}
+.sgk-chan-troi-sang-tao6 {
+  background-image: url('Image/chan-troi-sang-tao-khoa-hoc-tu-nhien-6.png');
+}
+.sgk-chan-troi-sang-tao7 {
+  background-image: url('Image/chan-troi-sang-tao-ngu-van-7-tap-1.jpeg');
+}
+.sgk-chan-troi-sang-tao8 {
+  background-image: url('Image/chan-troi-sang-tao-cong-nghe-8.png');
+}
+
+.sgk-nxbgdvn1 {
+  background-image: url('Image/sgk5-bgd-art.webp');
+}
+.sgk-nxbgdvn2 {
+  background-image: url('Image/sgk9-bgd-hoa.jpg');
+}
+.recommend {
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.recommend h2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.recommend .list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+}

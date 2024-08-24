@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{url_for('static', filename='/Image/v-lib_logo.png')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='navbar.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='video-gallery.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='footer.css')}}">
+    
+    <title>Video Vật Lý</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="{{ url_for('dashboard') }}"><img src="{{url_for('static', filename='/Image/v-lib_logo.png')}}" width="50px"></a>
+        </div>
+        <!--  -->
+        <nav>
+            <ul>
+                <li><a class="nav-list" href="{{ url_for('dashboard') }}">Trang Chủ</a></li>
+                <li><a class="nav-list" href="{{ url_for('sgk') }}">Sách Giáo Khoa</a></li>
+                <li><a class="nav-list" href="{{ url_for('thu_vien') }}">Thư Viện</a></li>
+                <li><a class="nav-list" href="{{ url_for('video') }}">Video</a></li>
+                <li><a class="nav-list" href="{{ url_for('quiz') }}">Quiz</a></li>
+                <li><a class="nav-list" href="{{ url_for('about_us') }}">Về Chúng Tôi</a></li>
+            </ul>
+        </nav>
+        <!--  -->
+        <div class="account">
+            <a href="/index"><img src="{{url_for('static', filename='/Image/account-icon.png')}}" width="50px"></a>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------------- -->
+    
+    <div class="video-container">
+        <div class="video-list">
+            <iframe width="320" height="180" src="https://www.youtube.com/embed/xfelCWDcy3E?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="320" height="180" src="https://www.youtube.com/embed/tPUth_y7tI8" title="Nước &quot;bẻ cong&quot; ánh sáng" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="320" height="180" src="https://www.youtube.com/embed/MBFQfZb9YiE" title="Làm thí nghiệm vật lý &quot;kỳ diệu&quot; cho bé - &quot;Ly nước úp ngược&quot;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="320" height="180" src="https://www.youtube.com/embed/4xaJKCKNrOw" title="Thí nghiệm nước dâng lên trong cốc úp ngược" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="320" height="180" src="https://www.youtube.com/embed/9-IOI7OfDds" title="BẮT CÓC QUẢ TRỨNG NHỜ SỰ CHÊNH LỆCH ÁP SUẤT CHẤT KHÍ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="320" height="180" src="https://www.youtube.com/embed/1OlUV5qpja0" title="HỌC SINH LỚP 5 THỰC HÀNH LẮP MẠCH ĐIỆN ĐƠN GIẢN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="320" height="180" src="https://www.youtube.com/embed/42wge4A1UoY" title="Tổng hợp những thí nghiệm Vật Lí cực hay| Thí nghiệm vui| VVP MUSIC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="320" height="180" src="https://www.youtube.com/embed/Wn-IXgxNSiE" title="Inertia ball demonstration // Homemade Science with Bruce Yeany" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="320" height="180" src="https://www.youtube.com/embed/OydqR_7_DjI" title="How to See Without Glasses" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="320" height="180" src="https://www.youtube.com/embed/jJL0XoNBaac" title="The Assassin&#39;s Teapot Is Weird" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="320" height="180" src="https://www.youtube.com/embed/QrkiJZKJfpY" title="Mechanical circuits: electronics without electricity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="320" height="180" src="https://www.youtube.com/embed/L5E4NiP4hpM" title="Music, Magic and Mayhem with Tesla Coil" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="320" height="180" src="https://www.youtube.com/embed/IJgzVaTPEow" title="Plotting Magnetic Field Lines" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <h3>V-LIBRARY</h3>
+            <p>Với mong muốn đem trang sách đến với các em, đồng thời hỗ trợ cung cấp nguồn tài liệu chính thống tới thầy cô, "V-Library" là giải pháp hiện đại cho những vấn đề xưa cũ.</p>
+            <ul class="socials">
+                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100090439011915"><img src="{{url_for('static', filename='/Image/facebook-icon.png')}}" width="30px"></a></li>
+                <li><a href="#"><img src="{{url_for('static', filename='/Image/instagram-icon.png')}}" width="30px"></a></li>
+                <li><a href="#"><img src="{{url_for('static', filename='/Image/youtube-icon.png')}}" width="30px"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

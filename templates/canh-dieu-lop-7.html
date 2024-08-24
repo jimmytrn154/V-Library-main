@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{url_for('static', filename='/Image/favicon.ico')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static', filename='navbar_update.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='sgk.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='ban-quyen-sach.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <img class="logo" src="{{url_for('static', filename='/Image/v-lib_logo.png')}}" width="50px" alt="">
+        <ul>
+            <li><a class="nav-list" href="{{ url_for('dashboard') }}">Trang Chủ</a></li>
+            <li><a class="nav-list" href="{{ url_for('about_us') }}">Về Chúng Tôi</a></li>
+            <li><a class="nav-list" href="{{ url_for('sgk') }}">Sách Giáo Khoa</a></li>
+            <li><a class="nav-list" href="{{ url_for('thu_vien') }}">Thư Viện</a></li>
+            <li><a class="nav-list" href="https://mancupsea.wixsite.com/v-library/blank-2">Video</a></li>
+            <li><a class="nav-list" href="{{ url_for('quiz') }}">Quiz</a></li>
+        </ul>
+        <a href="{{ url_for('home') }}"><i class="fa-solid fa-user"></i></a>
+        <label for="check" class="bars">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </nav>
+    <!-- -------------------------- -->
+    <div class="container-ban-quyen-sach">
+        <div class="ban-quyen-sach">
+            <p>Sách ebook được sưu tầm từ Internet. Bản quyền sách thuộc về Tác giả và Nhà xuất bản.</p>
+        </div>
+    </div>
+
+    <div class="library">
+        <div class="row">
+            <a href="https://drive.google.com/file/d/16XvYmIl5r6Gp-jJKSQ3TXpFRs0vOymcS/view" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/canh-dieu-toan-7-tap-1.png')}}"></a>
+            <a href="https://drive.google.com/file/d/17s7-28DF72t6vl8ybEK1P05tWfpBlKXD/view" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/canh-dieu-toan-7-tap-2.png')}}"></a>
+            <a href="https://drive.google.com/file/d/1ODBaRvn3AqIDD6oM64-S0sKcYh8L01-c/view" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/canh-dieu-ngu-van-7-tap-1.png')}}"></a>
+            <a href="https://drive.google.com/file/u/0/d/1csf8qpoJu2TI67ix6P-UlUENSHhlu7u0/view" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/canh-dieu-ngu-van-7-tap-2.jpeg')}}"></a>
+            <a href="https://drive.google.com/file/d/1SnOgfC1HMDiKmzJLMkcRF8p9UOYT-nxn/view" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/canh-dieu-tieng-anh-7.jpeg')}}"></a>
+        </div>
+        <div class="row">
+            <a href="https://drive.google.com/file/d/1nUBJBd6nU4-kdqouDJMjIk0f2uv36BGO/view" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/canh-dieu-khoa-hoc-tu-nhien-7.png')}}"></a>
+            <a href="https://drive.google.com/file/d/1UnC7mUyxIVKiToBL8vF8VZgORCEn2bmj/view" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/canh-dieu-mi-thuat-7.jpeg')}}"></a>
+            <a href="https://drive.google.com/file/d/1Bm5VqTxqAwVbr57Gm4dUbViOA-9wlqzG/view" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/canh-dieu-am-nhac-7.jpeg')}}"></a>
+            <a href="https://drive.google.com/file/d/1i7UT5C15gtTOoj2HMInMQ0sEfSWimmK_/view" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/canh-dieu-tin-hoc-7.jpeg')}}"></a>
+            <a href="https://drive.google.com/file/d/1FeAOOityanL8o5mwwXe3ITnktoiYk-B3/view" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/canh-dieu-cong-nghe-7.jpeg')}}"></a>
+        </div>
+        <div class="row">
+            <a href="https://drive.google.com/file/u/0/d/1W8MJyLRWxeD6vBUZZNPU-MZwvzvQ12vt/view" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/canh-dieu-giao-duc-cong-dan-7.jpeg')}}"></a>
+            <a href="https://drive.google.com/file/d/1nrcnRFP_fQzRTL48ZqjCObvoSNq5BYbk/view" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/canh-dieu-giao-duc-the-chat-7.jpeg')}}"></a>
+            <a href="https://drive.google.com/file/u/0/d/1tri-jw8WhckzEPzopyt34cJmV2YpeOxY/view" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/canh-dieu-lich-su-va-dia-li-7.jpeg')}}"></a>
+        </div>
+    </div>
+
+    <!-- -------------------------- -->
+    
+    <footer>
+        <div class="footer-content">
+            <h3>V-LIBRARY</h3>
+            <p>Với mong muốn đem trang sách đến với các em, đồng thời hỗ trợ cung cấp nguồn tài liệu chính thống tới thầy cô, "V-Library" là giải pháp hiện đại cho những vấn đề xưa cũ.</p>
+            <ul class="socials">
+                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100090439011915"><img src="{{url_for('static', filename='/Image/facebook-icon.png')}}" width="30px"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

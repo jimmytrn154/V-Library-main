@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='xin-chao copy.css') }}">
+    <meta charset="UTF-8">
+    <link rel="icon" href="{{url_for('static', filename='/Image/favicon.ico')}}" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xin Chao</title>
+</head>
+<body>
+    <div class="banner">
+      <div class="navbar">
+        <img src="{{url_for('static', filename='/Image/v-lib_logo.png')}}" class="logo">
+      </div>
+      <div class="content">
+        <h1>V-LIBRARY <span id="multiText"></span></h1>
+        <p>Đây là thư viện số được thành lập vào năm 2023 bởi các học sinh Vinschool. Hãy chọn các nút phía dưới.</p>
+        <div>
+          <a href="/index1"><button type="button">Đăng ký</button></a>
+          <a href="/index"><button type="button">Đăng nhập</button></a>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#multiText",{
+        strings : ["XIN CHÀO!", "HELLO!", "CHÀO MỪNG!", "CHÀO BẠN!",],
+        loop : true,
+        typeSpeed : 90,
+        backSpeed : 100,
+        backDelay : 1500
+      });
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Fraunces' rel='stylesheet'>
+    <link rel="icon" href="{{url_for('static', filename='/Image/favicon.ico')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='navbar_update.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='lop.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='footer.css') }}">
+    <title>Kết Nối Tri Thức</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <img class="logo" src="{{url_for('static', filename='/Image/v-lib_logo.png')}}" width="50px" alt="">
+        <ul>
+            <li><a class="nav-list" href="{{ url_for('dashboard') }}">Trang Chủ</a></li>
+            <li><a class="nav-list" href="{{ url_for('about_us') }}">Về Chúng Tôi</a></li>
+            <li><a class="nav-list" href="{{ url_for('sgk') }}">Sách Giáo Khoa</a></li>
+            <li><a class="nav-list" href="{{ url_for('thu_vien') }}">Thư Viện</a></li>
+            <li><a class="nav-list" href="https://mancupsea.wixsite.com/v-library/blank-2">Video</a></li>
+            <li><a class="nav-list" href="{{ url_for('quiz') }}">Quiz</a></li>
+        </ul>
+        <a href="{{ url_for('home') }}"><i class="fa-solid fa-user"></i></a>
+        <label for="check" class="bars">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </nav>
+    <!-- -------------------------- -->
+    <div class="library">
+        <div class="row">
+            <div class="tieu-hoc">
+                <a href="{{ url_for('ctst1') }}"><button class="grade">Lớp 1</button></a>
+                <a href="{{ url_for('ctst2') }}"><button class="grade">Lớp 2</button></a>
+                <a href="{{ url_for('ctst3') }}"><button class="grade">Lớp 3</button></a>
+                <a href="{{ url_for('ctst4') }}"><button class="grade">Lớp 4</button></a>
+                <a href="{{ url_for('bgd5') }}"><button class="grade">Lớp 5</button></a>
+            </div>
+            <div class="trung-hoc">
+                <a href="{{ url_for('ctst6') }}"><button class="grade">Lớp 6</button></a>
+                <a href="{{ url_for('ctst7') }}"><button class="grade">Lớp 7</button></a>
+                <a href="{{ url_for('ctst8') }}"><button class="grade">Lớp 8</button></a>
+                <a href="{{ url_for('bgd9') }}"><button class="grade">Lớp 9</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------- -->
+    
+    <footer>
+        <div class="footer-content">
+            <h3>V-LIBRARY</h3>
+            <p>Với mong muốn đem trang sách đến với các em, đồng thời hỗ trợ cung cấp nguồn tài liệu chính thống tới thầy cô, "V-Library" là giải pháp hiện đại cho những vấn đề xưa cũ.</p>
+            <ul class="socials">
+                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100090439011915"><img src="/IMG/facebook-icon.png" width="30px"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

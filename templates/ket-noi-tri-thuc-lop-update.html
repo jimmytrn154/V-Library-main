@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Fraunces' rel='stylesheet'>
+    <link rel="icon" href="{{url_for('static', filename='/Image/favicon.ico')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='navbar_update.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='thu-vien-update.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='footer.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <img class="logo" src="{{url_for('static', filename='/Image/v-lib_logo.png')}}" width="50px" alt="">
+        <ul>
+            <li><a class="nav-list" href="{{ url_for('dashboard') }}">Trang Chủ</a></li>
+            <li><a class="nav-list" href="{{ url_for('about_us') }}">Về Chúng Tôi</a></li>
+            <li><a class="nav-list" href="{{ url_for('sgk') }}">Sách Giáo Khoa</a></li>
+            <li><a class="nav-list" href="{{ url_for('thu_vien') }}">Thư Viện</a></li>
+            <li><a class="nav-list" href="https://mancupsea.wixsite.com/v-library/blank-2">Video</a></li>
+            <li><a class="nav-list" href="{{ url_for('quiz') }}">Quiz</a></li>
+        </ul>
+        <a href="{{ url_for('home') }}"><i class="fa-solid fa-user"></i></a>
+        <label for="check" class="bars">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </nav>
+
+    <div class="library-container">
+        <div class="genre">
+            <div class="genre-child sgk-img-contain sgk-ket-noi-tri-thuc1">
+    
+            </div>
+            <div class="genre-child">
+                <div class="genre-content">
+                    <h2>Lớp 1</h2>
+                    <p>Bộ sách giáo khoa Kết Nối Tri Thức.</p>
+                    <a href="{{ url_for('kntt1') }}"><input type="button" value="Đọc thêm"></a>
+                </div>
+            </div>
+        </div>
+        <div class="genre">
+            <div class="genre-child sgk-img-contain sgk-ket-noi-tri-thuc2">
+    
+            </div>
+            <div class="genre-child">
+                <div class="genre-content">
+                    <h2>Lớp 2</h2>
+                    <p>Bộ sách giáo khoa Kết Nối Tri Thức.</p>
+                    <a href="{{ url_for('kntt2') }}"><input type="button" value="Đọc thêm"></a>
+                </div>
+            </div>
+        </div>
+        <div class="genre">
+            <div class="genre-child sgk-img-contain sgk-ket-noi-tri-thuc3">
+    
+            </div>
+            <div class="genre-child">
+                <div class="genre-content">
+                    <h2>Lớp 3</h2>
+                    <p>Bộ sách giáo khoa Kết Nối Tri Thức.</p>
+                    <a href="{{ url_for('kntt3') }}"><input type="button" value="Đọc thêm"></a>
+                </div>
+            </div>
+        </div>
+        <div class="genre">
+            <div class="genre-child sgk-img-contain sgk-ket-noi-tri-thuc4">
+    
+            </div>
+            <div class="genre-child">
+                <div class="genre-content">
+                    <h2>Lớp 4</h2>
+                    <p>Bộ sách giáo khoa Kết Nối Tri Thức.</p>
+                    <a href="{{ url_for('kntt4') }}"><input type="button" value="Đọc thêm"></a>
+                </div>
+            </div>
+        </div>
+        <div class="genre">
+            <div class="genre-child sgk-img-contain sgk-nxbgdvn1">
+    
+            </div>
+            <div class="genre-child">
+                <div class="genre-content">
+                    <h2>Lớp 5</h2>
+                    <p>Bộ sách giáo khoa Bộ Giáo Dục Và Đào Tạo.</p>
+                    <a href="{{ url_for('bgd5') }}"><input type="button" value="Đọc thêm"></a>
+                </div>
+            </div>
+        </div>
+        <div class="genre">
+            <div class="genre-child sgk-img-contain sgk-ket-noi-tri-thuc6">
+    
+            </div>
+            <div class="genre-child">
+                <div class="genre-content">
+                    <h2>Lớp 6</h2>
+                    <p>Bộ sách giáo khoa Kết Nối Tri Thức.</p>
+                    <a href="{{ url_for('kntt6') }}"><input type="button" value="Đọc thêm"></a>
+                </div>
+            </div>
+        </div>
+        <div class="genre">
+            <div class="genre-child sgk-img-contain sgk-ket-noi-tri-thuc7">
+    
+            </div>
+            <div class="genre-child">
+                <div class="genre-content">
+                    <h2>Lớp 7</h2>
+                    <p>Bộ sách giáo khoa Kết Nối Tri Thức.</p>
+                    <a href="{{ url_for('kntt7') }}"><input type="button" value="Đọc thêm"></a>
+                </div>
+            </div>
+        </div>
+        <div class="genre">
+            <div class="genre-child sgk-img-contain sgk-ket-noi-tri-thuc8">
+    
+            </div>
+            <div class="genre-child">
+                <div class="genre-content">
+                    <h2>Lớp 8</h2>
+                    <p>Bộ sách giáo khoa Kết Nối Tri Thức.</p>
+                    <a href="{{ url_for('kntt8') }}"><input type="button" value="Đọc thêm"></a>
+                </div>
+            </div>
+        </div>
+        <div class="genre">
+            <div class="genre-child sgk-img-contain sgk-nxbgdvn2">
+    
+            </div>
+            <div class="genre-child">
+                <div class="genre-content">
+                    <h2>Lớp 9</h2>
+                    <p>Bộ sách giáo khoa Bộ Giáo Dục Và Đào Tạo.</p>
+                    <a href="{{ url_for('bgd9') }}"><input type="button" value="Đọc thêm"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------- -->
+    
+    <footer>
+        <div class="footer-content">
+            <h3>V-LIBRARY</h3>
+            <p>Với mong muốn đem trang sách đến với các em, đồng thời hỗ trợ cung cấp nguồn tài liệu chính thống tới thầy cô, "V-Library" là giải pháp hiện đại cho những vấn đề xưa cũ.</p>
+            <ul class="socials">
+                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100090439011915"><img src="{{url_for('static', filename='/Image/facebook-icon.png')}}" width="30px"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

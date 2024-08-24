@@ -1,0 +1,27 @@
+*{
+  font-family: 'Fraunces';
+}
+
+.navbar {
+  background: #A67C5B;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.logo {
+  filter: brightness(1.9);
+}
+nav ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+nav ul li a{
+  transition: 0.3s;
+  text-decoration: none;
+  color: #FFFDEC;
+}
+nav ul li a:hover{
+  transition: 0.3s;
+  color: black;
+}

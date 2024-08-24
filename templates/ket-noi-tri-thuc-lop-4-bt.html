@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{url_for('static', filename='/Image/favicon.ico')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static', filename='navbar_update.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='sgk.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='ban-quyen-sach.css')}}">
+    <title>SBT</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <img class="logo" src="{{url_for('static', filename='/Image/v-lib_logo.png')}}" width="50px" alt="">
+        <ul>
+            <li><a class="nav-list" href="{{ url_for('dashboard') }}">Trang Chủ</a></li>
+            <li><a class="nav-list" href="{{ url_for('about_us') }}">Về Chúng Tôi</a></li>
+            <li><a class="nav-list" href="{{ url_for('sgk') }}">Sách Giáo Khoa</a></li>
+            <li><a class="nav-list" href="{{ url_for('thu_vien') }}">Thư Viện</a></li>
+            <li><a class="nav-list" href="https://mancupsea.wixsite.com/v-library/blank-2">Video</a></li>
+            <li><a class="nav-list" href="{{ url_for('quiz') }}">Quiz</a></li>
+        </ul>
+        <a href="{{ url_for('home') }}"><i class="fa-solid fa-user"></i></a>
+        <label for="check" class="bars">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </nav>
+    <!-- -------------------------- -->
+    <div class="container-ban-quyen-sach">
+        <div class="ban-quyen-sach">
+            <p>Sách ebook được sưu tầm từ Internet. Bản quyền sách thuộc về Tác giả và Nhà xuất bản.</p>
+        </div>
+    </div>
+
+    <div class="library">
+        <div class="row">
+            <a href="https://taphuan.nxbgd.vn/#/training-course-detail/26b7e45e-fea2-4112-90d1-a22af64cf4a9" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/ket-noi-tri-thuc-toan-4-tap-1.png')}}"></a>
+            <a href="#" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/ket-noi-tri-thuc-toan-4-tap-2.jpeg')}}"></a>
+            <a href="https://taphuan.nxbgd.vn/#/training-course-detail/34c6b59d-f582-4800-bebc-3113f0b95482" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/ket-noi-tri-thuc-tieng-viet-4-tap-1.png')}}"></a>
+            <a href="https://taphuan.nxbgd.vn/#/training-course-detail/ea858c73-0899-45b3-8403-7cfee92ffc06" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/ket-noi-tri-thuc-tieng-viet-4-tap-2.jpeg')}}"></a>
+            <a href="#" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/ket-noi-tri-thuc-tieng-anh-4.png')}}"></a>
+        </div>
+        <div class="row">
+            <a href="https://taphuan.nxbgd.vn/#/training-course-detail/10516192-0627-4ca4-820d-196a0d9e54c7" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/ket-noi-tri-thuc-khoa-hoc-4.png')}}"></a>
+            <a href="https://taphuan.nxbgd.vn/#/training-course-detail/8fba14bf-243d-426b-83b0-a8662cbc8caf" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/ket-noi-tri-thuc-mi-thuat-4.png')}}"></a>
+            <a href="https://taphuan.nxbgd.vn/#/training-course-detail/af41622c-c029-42f4-8a16-484bb23614b9" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/ket-noi-tri-thuc-am-nhac-4.png')}}"></a>
+            <a href="https://taphuan.nxbgd.vn/#/training-course-detail/cae422ac-442e-4c39-a09b-7c009a04bf32" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/ket-noi-tri-thuc-dao-duc-4.png')}}"></a>
+            <a href="https://taphuan.nxbgd.vn/#/training-course-detail/9192dbf0-7b92-4436-82d0-858ec9001fc2" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/ket-noi-tri-thuc-tin-hoc-4.png')}}"></a>
+        </div>
+        <div class="row">
+            <a href="https://taphuan.nxbgd.vn/#/training-course-detail/f97504f2-dd4d-48cb-94ea-7516fe55bc90" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/ket-noi-tri-thuc-cong-nghe-4.png')}}"></a>
+
+        </div>
+    </div>
+    <!-- -------------------------- -->
+    
+    <footer>
+        <div class="footer-content">
+            <h3>V-LIBRARY</h3>
+            <p>Với mong muốn đem trang sách đến với các em, đồng thời hỗ trợ cung cấp nguồn tài liệu chính thống tới thầy cô, "V-Library" là giải pháp hiện đại cho những vấn đề xưa cũ.</p>
+            <ul class="socials">
+                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100090439011915"><img src="{{url_for('static', filename='/Image/facebook-icon.png')}}" width="30px"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

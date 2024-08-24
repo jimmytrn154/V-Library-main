@@ -1,0 +1,28 @@
+*{
+    font-family: 'san serif';
+}
+
+body{
+    background-color: #FFFDEC;
+}
+
+.container {
+    /* position: relative; */
+    max-width: 1200px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* z-index: -1; */
+}
+
+.container p{
+    margin: 10px;
+}
+
+.wrapper {
+    margin: 75px;
+}

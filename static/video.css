@@ -1,0 +1,116 @@
+body {
+    background-color: #FFFDEC;
+}
+
+.video-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* align-items: center;
+    justify-content: center; */
+    margin: 20px;
+}
+
+.video-child {
+    background-color: #4E4742;
+    color: white;
+    height: 300px;
+    width: 350px;
+    /* display: block; */
+    text-align: center;
+    /* top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); */
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.video-child .video-content {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 20px;
+}
+
+.video-content h2 {
+    margin-bottom: 20px;
+}
+
+.video-content p {
+    /* font-size: 15px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.video-content input {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    border: black 1px solid;
+    height: 40px;
+    width: 150px;
+    align-items: flex-start;
+    justify-content: end;
+    transition: 0.2s;
+}
+
+.video-content input:hover {
+    background-color: black;
+    color: white;
+    border: white 1px solid;
+    transition: 0.2s;
+}
+
+.video-img {
+    background-position: center;
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: white; */
+}
+
+.vat-ly-img {
+    background-image: url(../IMG/doc_sach_hay_hay_hay.jpeg);
+}
+
+.hoa-hoc-img {
+    background-image: url(../IMG/fairy-tale-img.jpeg);
+}
+
+.sinh-hoc-img {
+    background-image: url(../IMG/fairy-tale-img.jpeg);
+}
+
+.recommend {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.recommend h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.recommend .list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* .recommend .list .sgk {
+    margin-left: 20px;
+    margin-right: 20px;
+} */

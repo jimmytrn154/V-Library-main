@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{url_for('static', filename='/Image/favicon.ico')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static', filename='navbar_update.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='sgk.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='ban-quyen-sach.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <img class="logo" src="{{url_for('static', filename='/Image/v-lib_logo.png')}}" width="50px" alt="">
+        <ul>
+            <li><a class="nav-list" href="{{ url_for('dashboard') }}">Trang Chủ</a></li>
+            <li><a class="nav-list" href="{{ url_for('about_us') }}">Về Chúng Tôi</a></li>
+            <li><a class="nav-list" href="{{ url_for('sgk') }}">Sách Giáo Khoa</a></li>
+            <li><a class="nav-list" href="{{ url_for('thu_vien') }}">Thư Viện</a></li>
+            <li><a class="nav-list" href="https://mancupsea.wixsite.com/v-library/blank-2">Video</a></li>
+            <li><a class="nav-list" href="{{ url_for('quiz') }}">Quiz</a></li>
+        </ul>
+        <a href="{{ url_for('home') }}"><i class="fa-solid fa-user"></i></a>
+        <label for="check" class="bars">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </nav>
+    <!-- -------------------------- -->
+    <div class="container-ban-quyen-sach">
+        <div class="ban-quyen-sach">
+            <p>Sách ebook được sưu tầm từ Internet. Bản quyền sách thuộc về Tác giả và Nhà xuất bản.</p>
+        </div>
+    </div>
+
+    <div class="library">
+        <div class="row">
+            <a href="https://hanhtrangso.nxbgd.vn/ebook/read/toan-4-tap-mot-11471" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/chan-troi-sang-tao-toan-4-tap-1.png')}}"></a>
+            <a href="https://hanhtrangso.nxbgd.vn/ebook/read/toan-4-tap-hai-11472" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/chan-troi-sang-tao-toan-4-tap-2.png')}}"></a>
+            <a href="https://hanhtrangso.nxbgd.vn/ebook/read/tieng-viet-4-tap-mot-11469" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/chan-troi-sang-tao-tieng-viet-4-tap-1.jpeg')}}"></a>
+            <a href="https://hanhtrangso.nxbgd.vn/ebook/read/tieng-viet-4-tap-hai-11470" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/chan-troi-sang-tao-tieng-viet-4-tap-2.png')}}"></a>
+            <a href="https://hanhtrangso.nxbgd.vn/ebook/read/tieng-anh-4-tap-1-11377" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/chan-troi-sang-tao-tieng-anh-4.png')}}"></a>
+        </div>
+        <div class="row">
+            <a href="https://hanhtrangso.nxbgd.vn/ebook/read/khoa-hoc-4-11474" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/chan-troi-sang-tao-khoa-hoc-4.png')}}"></a>
+            <a href="https://hanhtrangso.nxbgd.vn/sach-dien-tu/mi-thuat-4-ban-1-11478" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/chan-troi-sang-tao-mi-thuat-4.png')}}"></a>
+            <a href="https://hanhtrangso.nxbgd.vn/ebook/read/am-nhac-4-11362" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/chan-troi-sang-tao-am-nhac-4.jpeg')}}"></a>
+            <a href="https://hanhtrangso.nxbgd.vn/ebook/read/hoat-dong-trai-nghiem-ban-1-11480" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/chan-troi-sang-tao-hoat-dong-va-trai-nghiem-4-ban-1.png')}}"></a>
+            <a href="https://hanhtrangso.nxbgd.vn/ebook/read/hoat-dong-trai-nghiem-ban-2-11481" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/chan-troi-sang-tao-hoat-dong-va-trai-nghiem-4-ban-2.png')}}"></a>
+        </div>
+        <div class="row">
+            <a href="https://hanhtrangso.nxbgd.vn/ebook/read/tin-hoc-4-11475" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/chan-troi-sang-tao-tin-hoc-4.png')}}"></a>
+            <a href="https://hanhtrangso.nxbgd.vn/ebook/read/cong-nghe-4-11476" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/chan-troi-sang-tao-cong-nghe-4.png')}}"></a>
+            <a href="https://hanhtrangso.nxbgd.vn/ebook/read/lich-su-va-dia-li-4-11473" target="_blank"><img class="subject" src="{{url_for('static', filename='/Image/chan-troi-sang-tao-lich-su-va-dia-ly-4.png')}}"></a>
+        </div>
+    </div>
+    <!-- -------------------------- -->
+    
+    <footer>
+        <div class="footer-content">
+            <h3>V-LIBRARY</h3>
+            <p>Với mong muốn đem trang sách đến với các em, đồng thời hỗ trợ cung cấp nguồn tài liệu chính thống tới thầy cô, "V-Library" là giải pháp hiện đại cho những vấn đề xưa cũ.</p>
+            <ul class="socials">
+                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100090439011915"><img src="{{url_for('static', filename='/Image/facebook-icon.png')}}" width="30px"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

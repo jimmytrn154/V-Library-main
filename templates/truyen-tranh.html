@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{url_for('static', filename='/Image/favicon.ico')}}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='navbar_update.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='sach.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='footer.css')}}">
+
+    
+    <title>Sách Truyện</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <img class="logo" src="{{url_for('static', filename='/Image/v-lib_logo.png')}}" width="50px" alt="">
+        <ul>
+            <li><a class="nav-list" href="{{ url_for('dashboard') }}">Trang Chủ</a></li>
+            <li><a class="nav-list" href="{{ url_for('about_us') }}">Về Chúng Tôi</a></li>
+            <li><a class="nav-list" href="{{ url_for('sgk') }}">Sách Giáo Khoa</a></li>
+            <li><a class="nav-list" href="{{ url_for('thu_vien') }}">Thư Viện</a></li>
+            <li><a class="nav-list" href="https://mancupsea.wixsite.com/v-library/blank-2">Video</a></li>
+            <li><a class="nav-list" href="{{ url_for('quiz') }}">Quiz</a></li>
+        </ul>
+        <a href="{{ url_for('home') }}"><i class="fa-solid fa-user"></i></a>
+        <label for="check" class="bars">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </nav>
+    
+    <!-- -------------------------------------------------------------------------------------- -->
+    
+    <div class="library">
+        
+        <!--30 Books--> <!--23/8-->
+        
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-sieu-quay-teppi.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/sieu-quay-teppi.jpg')}}"></a>
+            <a href="https://nhasachmienphi.com/doc-online/chiec-luoc-nga-326463" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chiec-luoc-nga-truyen-tranh.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-o-long-vien-sieu-buon-cuoi-tron-bo.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/o-long-vien-sieu-buon-cuoi.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-o-long-vien-tron-bo.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/o-long-vien-tron-bo.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-ehon-nhat-ban-tay-xinh-dau-nhi.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ehon-tay-xinh-dau-nhi.jpg')}}"></a>
+        </div>
+        
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-ehon-nhat-ban-giay-nho-di-thoi.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ehon-giay-nho-di-thoi.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-ehon-nhat-ban-cung-lau-cho-sach-nao.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ehon-cung-lau-cho-sach-nao.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-ehon-nhat-ban-truoc-khi-di-da-ngoai.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ehon-truoc-khi-di-da-ngoai.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-ehon-nhat-ban-tat-ca-deu-di-i.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ehon-tat-ca-deu-di-i.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-ehon-nhat-ban-mon-qua-tu-cua-so.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ehon-mon-qua-tu-cua-so.jpg')}}"></a>
+        </div>
+        
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-ehon-nhat-ban-mako-va-chuyen-phieu-luu-trong-bon-tam.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ehon-mako-va-chuyen-phieu-luu-trong-bon-tam.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-ehon-nhat-ban-em-gai-bi-om.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ehon-em-gai-bi-om.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-ehon-nhat-ban-chuyen-xi-hoi.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ehon-chuyen-xi-hoi.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-ehon-nhat-ban-chuyen-nhung-chiec-rang.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ehon-chuyen-nhung-chiec-rang.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-ehon-nhat-ban-ca-vang-tron-o-dau-roi-nhi.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ehon-ca-vang-tron-o-dau-roi-nhi.jpg')}}"></a>
+        </div>
+        
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-ehon-nhat-ban-be-trung.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ehon-be-trung.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-ehon-nhat-ban-asae-va-em-gai-be-nho.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ehon-asae-va-em-gai-be-nho.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-ehon-nhat-ban-bull-choi-tron-tim.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ehon-bull-choi-tron-tim.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-ehon-nhat-ban-ban-tay-ky-dieu-cua-sachi.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ehon-ban-tay-ky-dieu-cua-sachi.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-7-vien-ngoc-rong-dragon-ball.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/7-vien-ngoc-rong.jpg')}}"></a>
+        </div>
+        
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-ai-mua-hanh-toi.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ai-mua-hanh-toi.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-cay-tre-tram-dot.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cay-tre-tram-dot.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-chang-ngoc-hoc-khon.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chang-ngoc-hoc-khon.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-chuyen-nang-to-thi.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nang-to-thi.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-truong-chi.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/truong-chi.jpg')}}"></a>
+        </div>
+        
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-deo-nhac-cho-meo.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/deo-nhac-cho-meo.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-gian-may-tao-o-voi-ai.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/gian-may-t-o-voi-ai.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-giet-cho-khuyen-chong.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/giet-cho-khuyen-chong.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-bon-anh-tai.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bon-anh-tai.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-phu-thuy-so-ma.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/phu-thuy-so-ma.jpg')}}"></a>
+        </div>
+        
+        <!--30 Books--> <!--23/8-->
+        
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-quan-gio.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/quan-gio.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-su-tich-banh-chung-banh-giay.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/su-tich-banh-chung-banh-giay.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-su-tich-dua-hau.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/su-tich-dua-hau.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-su-tich-trau-cau.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/su-tich-trau-cau.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-qua-va-cong.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/qua-va-cong.jpg')}}"></a>
+        </div>
+        
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-ngheu-so-oc-hen.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ngheu-so-oc-hen.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-nguoi-hoa-ho.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nguoi-hoa-ho.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-tham-vang-da-lao-truong.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/tham-vang-da-lao-truong.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-tu-thuc-gap-tien.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/tu-thuc-gap-tien.jpg')}}"></a>
+            <a href="https://online.fliphtml5.com/qyhf/keby/#p=1" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tham-cong-vien-khung-long.jpg')}}"></a>
+        </div>
+        
+        <div class="row">
+            <a href="https://online.fliphtml5.com/qyhf/ldah/#p=1" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-bi-mat-hanh-tinh-mau-tim.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-dai-doremon-tap-3-pho-tuong-than-khong-lo/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-pho-tuong-than-khong-lo.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-dai-doremon-tap-4-lau-dai-duoi-day-bien/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-nobita-va-lau-dai-duoi-day-bien.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-dai-doremon-tap-5-nobita-lac-vao-xu-quy/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-nobita-va-chuyen-phieu-luu-vao-xu-quy.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-dai-doremon-tap-6-ten-doc-tai-vu-tru/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doraemon-ten-doc-tai-vu-tru.jpg')}}"></a>
+        </div>
+        
+        <div class="row">
+            <a href="https://dorahome.info/truyen-dai-doremon-tap-7-cuoc-xam-lang-cua-binh-doan-robot/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-cuoc-xam-lang-cua-binh-doan-nguoi-sat.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-dai-doremon-tap-8-cuoc-phieu-luu-vao-long-dat/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-cuoc-phieu-luu-vao-long-dat.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-dai-doremon-tap-9-chien-thang-quy-kamat-doc-xuoi/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doraemon-chien-thang-quy-kamat.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-dai-doremon-tap-10-ngoi-sao-cam/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doraemon-ngoi-sao-cam.jpg')}}"></a>
+            <a href="https://online.fliphtml5.com/qyhf/fslq/#p=1" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-nobita-den-xu-batu.jpg')}}"></a>
+        </div>
+        
+        <div class="row">
+            <a href="https://dorahome.info/truyen-dai-doremon-tap-12-vuong-quoc-tren-may-doc-xuoi/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doraemon-vuong-quoc-tren-may.jpg')}}"></a>
+            <a href="https://online.fliphtml5.com/qyhf/elah/#p=1" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doraemon-bi-mat-me-cung-bliki.jpg')}}"></a>
+            <a href="https://online.fliphtml5.com/qyhf/tvhg/#p=1" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doraemon-ba-chang-hiep-sy-mong-mo.jpg')}}"></a>
+            <a href="https://online.fliphtml5.com/qyhf/usro/#p=1" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doraemon-lac-vao-the-gioi-con-trung.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-dai-doremon-tap-16-hanh-trinh-qua-dai-ngan-ha/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doraemon-hanh-trinh-qua-dai-ngan-ha.jpg')}}"></a>
+        </div>
+        
+        <div class="row">
+            <a href="https://online.fliphtml5.com/qyhf/tjls/#p=1" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doraemon-thanh-pho-thu-nhoi-bong.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-dai-doremon-tap-18-cuoc-phieu-luu-den-dao-giau-vang/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doraemon-cuoc-phieu-luu-den-dao-giau-vang.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-dai-doremon-tap-19-di-tim-mien-dat-moi-doc-xuoi/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doraemon-di-tim-mien-dat-moi.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-dai-doremon-tap-20-truyen-thuyet-ve-vua-mat-troi-nobita-doc-xuoi/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-truyen-thuyet-ve-vua-mat-troi-nobita.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-dai-doremon-tap-21-du-hanh-den-vuong-quoc-loai-chim/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doraemon-du-hanh-den-vuong-quoc-loai-chim.jpg')}}"></a>
+        </div>
+
+        <!--30 Books--> <!--27/8-->
+
+        <div class="row">
+            <a href="https://dorahome.info/truyen-dai-doremon-tap-22-cuoc-chien-o-xu-so-robot/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doraemon-cuoc-chien-o-xu-so-robot.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-dai-doremon-tap-23-cuoc-phieu-luu-den-vuong-quoc-gio/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doraemon-nobita-va-nhung-phap-su-gio-bi-an.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-dai-doremon-tap-24-nobita-o-vuong-quoc-cho-meo/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doraemon-nobita-va-vuong-quoc-cho-meo.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-1/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-1.png')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-2/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-2.png')}}"></a>
+        </div>
+        
+        <div class="row">
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-3/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-3.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-4/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-4.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-5/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-5.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-6/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-6.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-7/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-7.jpg')}}"></a>
+        </div>
+        
+        <div class="row">
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-8/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-8.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-9/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-9.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-10/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-10.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-11/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-11.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-12/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-12.png')}}"></a>
+        </div>
+        
+        <div class="row">
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-13/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-13.png')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-14/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-14.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-15/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-15.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-16/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-16.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-17/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-17.jpg')}}"></a>
+        </div>
+        
+        <div class="row">
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-18/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-18.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-19/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-19.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-20/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-20.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-21/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-21.png')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-22/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-22.jpg')}}"></a>
+        </div>
+        
+        <div class="row">
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-23/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-23.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-24/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-24.png')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-25/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-25.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-26/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-26.jpg')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-27/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-27.jpg')}}"></a>
+        </div>
+
+        <!-- 10 Books --> <!--27/8-->
+
+        <div class="row">
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-28/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-28.png')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-29/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-29.png')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-30/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-30.png')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-31/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-31.png')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-32/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-32.png')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-33/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-33.png')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-34/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-34.png')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-35/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-35.png')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-36/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-36.png')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-37/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-37.png')}}"></a>
+        </div>
+        
+        <div class="row">
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-38/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-38.png')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-39/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-39.png')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-40/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-40.png')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-41/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-41.png')}}"></a>
+            <a href="https://dorahome.info/truyen-ngan-doremon-doc-xuoi-tap-42/" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doremon-tap-42.png')}}"></a>
+        </div>
+        
+    </div>
+    
+    <!-- -------------------------------------------------------------------------------------- -->
+    
+    <footer>
+        <div class="footer-content">
+            <h3>V-LIBRARY</h3>
+            <p>Với mong muốn đem trang sách đến với các em, đồng thời hỗ trợ cung cấp nguồn tài liệu chính thống tới thầy cô, "V-Library" là giải pháp hiện đại cho những vấn đề xưa cũ.</p>
+            <ul class="socials">
+                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100090439011915"><img src="{{url_for('static', filename='/Image/facebook-icon.png')}}" width="30px"></a></li>
+                <li><a href="#"><img src="{{url_for('static', filename='/Image/instagram-icon.png')}}" width="30px"></a></li>
+                <li><a href="#"><img src="{{url_for('static', filename='/Image/youtube-icon.png')}}" width="30px"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

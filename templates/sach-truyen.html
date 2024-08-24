@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{url_for('static', filename='/Image/favicon.ico')}}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='navbar_update.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='sach.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='footer.css')}}">
+
+    
+    <title>Sách Truyện</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <img class="logo" src="{{url_for('static', filename='/Image/v-lib_logo.png')}}" width="50px" alt="">
+        <ul>
+            <li><a class="nav-list" href="{{ url_for('dashboard') }}">Trang Chủ</a></li>
+            <li><a class="nav-list" href="{{ url_for('about_us') }}">Về Chúng Tôi</a></li>
+            <li><a class="nav-list" href="{{ url_for('sgk') }}">Sách Giáo Khoa</a></li>
+            <li><a class="nav-list" href="{{ url_for('thu_vien') }}">Thư Viện</a></li>
+            <li><a class="nav-list" href="https://mancupsea.wixsite.com/v-library/blank-2">Video</a></li>
+            <li><a class="nav-list" href="{{ url_for('quiz') }}">Quiz</a></li>
+        </ul>
+        <a href="{{ url_for('home') }}"><i class="fa-solid fa-user"></i></a>
+        <label for="check" class="bars">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </nav>
+
+    <!-- -------------------------------------------------------------------------------------- -->
+
+    <div class="library">
+                                                                                                           
+        <!--30 Books--> <!--10/6-->
+        
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-loi-nguyen-lo-ban.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/loi-nguyen-lo-ban.png')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-ky-thuat-nau-an-dai-tiec-60-mon-tom.pdf " target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ky-thuat-nau-an-dai-tiec-60-mon-tom.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-tat-ca-chung-ta-deu-la-ca.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/tat-ca-chung-ta-deu-la-ca.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-mat-thu.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/mat-thu.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-than-thoai-hy-lap.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/than-thoai-hy-lap.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-truyen-co-andersen.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/truyen-co-andersen.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-nghin-le-mot-dem.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nghin-le-mot-dem.jpg')}}"></a>
+            <a href="https://vietchiase.net/wp-content/uploads/2019/12/doc-sach-dac-nhan-tam-online.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/dac-nhan-tam.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/14Jy6UxSQo0xA0ymdtpJLeNdxxsIsEbtV/view" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/tony-buoi-sang-tren-duong-bang.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1aqntYqD3L2AqxjtqWhIaqQFjQtIryHIe/view" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/the-gioi-phang.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://drive.google.com/file/d/1OlJXaEISkowVI2o5P6kAxqkhZAzzmHwF/view" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/10-van-cau-hoi-vi-sao.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-sinh-ra-de-chay.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/sinh-ra-de-chay.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-steve-jobs-suc-manh-cua-su-khac-biet.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/suc-manh-cua-su-khac-biet.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1dTd3rF6STs3EbjoXshU68T6aUQA4mj8u/view" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/khong-gia-dinh.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1VH04jsoBxCqQzn8b0rdjHVK9UbRlatfW/view" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/anne-toc-do-lang-avonlea.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-nha-gia-kim.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nha-gia-kim.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-bat-tre-dong-xanh.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bat-tre-dong-xanh.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-hieu-ve-trai-tim.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hieu-ve-trai-tim.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-giet-con-chim-nhai.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/giet-con-chim-nhai.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1uVHF6VzfNE9uhHHxoMG4AKOdwQoN5Wsz/view" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/toi-la-mot-con-lua.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://drive.google.com/file/d/1jADMCj25Uw_pXyiPtbmCmMTWtmMBUvsq/view" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/einstein-cuoc-doi-va-vu-tru.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1TI16FiwXuvdt7YmL0wng3QLMofNr53a7/view" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/muoi-van-cau-hoi-vi-sao-khoa-hoc-va-moi-truong.png')}}"></a>
+            <a href="https://drive.google.com/file/d/1YblYgoec8C23Bdlbg3oPKf9xXd3HMOXR/view" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/muoi-van-cau-hoi-vi-sao-khoa-hoc-cong-trinh.png')}}"></a>
+            <a href="https://drive.google.com/file/d/1OJ2yeHmoXr6orQeCxmOMHZjM6Quo2Opj/view" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/trat-tu-vu-tru.png')}}"></a>
+            <a href="https://drive.google.com/file/d/1MyWIw7N8nFhKGygoMxtCBFDw0TIMLlNC/view?usp=share_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/khai-thac-suc-manh-tiem-thuc.jpg')}}"></a>
+        </div>
+        
+        <div class="row">
+            <a href="https://drive.google.com/file/d/1lbrQxXh4vL2vj2hef_jTF26fh14c0hQW/view" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/an-gi-khong-chet.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1Cjo578f4chO_ci4b7TR9bLRb2J3IYbfE/view" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/don-kihote.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1iuu7YdaVpqlNCjcun5v4EwAtfS2EySnI/view" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ky-uc-den.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1xPghyyCBkdaRoS-LQCy5BLC-xy_EadwM/view" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/thanh-pho-trom.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1bR0UkU3XrAybXn2hdof-xToTGYklCgni/view?usp=sharing" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/neu-biet-tram-nam-la-huu-han.jpg')}}"></a>
+        </div>
+
+        <!--30 Books--> <!--10/6-->
+
+        <div class="row">
+            <a href="https://drive.google.com/file/d/1dezDGsJXY5dAMdvdBPFU0zEJb-glX7qn/view" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nguoi-chong-vinh-cuu.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1qcyr5PLhQ8cOajeFY-gwkS75S2R3BN60/view" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ngay-cuoi-cung-cua-nguoi-tu-tu.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1GkV8CwONhidsDNLQxW5HXGheJE8enqR5/view?usp=share_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/suc-manh-cua-su-tu-te.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1HWHWQZAFZhlWuqZOe9kEzQphHGF93uaE/view" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/10-van-cau-hoi-vi-sao-vu-tru-ky-bi.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1yUK_Dd25yvDPyLddhi5b8vmGgwN8jZ7g/view" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/10-van-cau-hoi-vi-sao-co-the-nguoi.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://drive.google.com/file/d/1SpqLCHbDgExydaSdwzlp6mjYMBNFoZry/view" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/vi-sinh-vat-vi-tinh.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1TqlBG5DE7L2QHlBpDuFrQ2MHg0cblYcc/view?usp=share_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/gian.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1XsOugUm5PrX8PAc6OMyvITr8cYYtZOhT/view?usp=share_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/tu-chua-lanh.jfif')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-cuoc-chien-lo-den.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cuoc-chien-lo-den.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-giai-dieu-bi-an-va-con-nguoi-da-tao-ra-vu-tru.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/giai-dieu-bi-an-va-con-nguoi-da-tao-ra-vu-tru.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-chua-troi-co-phai-la-nha-toan-hoc.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chua-troi-co-phai-nha-toan-hoc.jpg')}}"></a>
+            <a href="https://paa.vn/wp-content/uploads/2020/03/nhung-tam-long-cao-ca-edmondo-de-amicis-paa-men-tang.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nhung-tam-long-cao-ca.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=4eabb3" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nhat-ky-anne-frank.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-1984.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/mot-chin-tam-tu.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-quan-khu-nam-dong.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/quan-khu-nam-dong.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-dem-hoi-long-tri.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/dem-hoi-long-tri.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=b3e43d" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/dao-giau-vang.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-tuyen-tap-nam-cao.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/tuyen-tap-nam-cao.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-tat-den.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/tat-den.jpg')}}"></a>
+            <a href="http://echithai.com/ebook/classic/phiataykhongcogila.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/phia-tay-khong-co-gi-la.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=c13e5b" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/alice-o-xu-so-dieu-ky.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1pLODnBGCGxqjd4dOXVOPNj1P2pL9hQVI/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/7-chien-luoc-thinh-vuong-va-hanh-phuc.png')}}"></a>
+            <a href="https://drive.google.com/file/d/1U24F5KNhwDO3Ud2_tjE7k3rtdwqS76S5/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/7-thoi-quen-de-thanh-dat.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1RJuIF41qglxS1o8NdDG35EyzQ_gt_Sgi/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/55-cach-chon-trang-phuc-phu-hop.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1DxK1zmO1m_qh6ldAu5cyGVuO6hCkAS49/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/55-cach-de-giup-do-nguoi-khac.jpg')}}"></a>
+        </div>
+        
+        <div class="row">
+            <a href="https://drive.google.com/file/d/1_BRmQQrJX6TyDyEo6UNPPpzn23sEspD4/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/55-cach-de-kich-hoat-tu-duy.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1MIOtP6m35gCe-eaEq7WHgHWp-Vl1jT8C/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/55-cach-de-song-co-ky-luat.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1W5-a4lB7lFB_Rg5NUM6QwYGYtZi_AAnr/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/55-cach-de-song-tich-cuc.png')}}"></a>
+            <a href="https://drive.google.com/file/d/1ADK1BKNKNDYcNrL-KiRVVcHWmkDihHGX/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/55-cach-de-tao-anh-huong-toi-nguoi-khac.png')}}"></a>
+            <a href="https://drive.google.com/file/d/13--LxeG54oZTP_f5I7xpcUDcmkD7-r9d/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/55-cach-de-tu-tin.png')}}"></a>
+        </div>
+
+        <!--30 Books--> <!--10/6-->
+
+        <div class="row">
+            <a href="https://drive.google.com/file/d/1PVLM0PoFOd-gpu2V3cgEgCd0hjNmJfIF/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/55-cach-de-vuot-qua-that-bai.png')}}"></a>
+            <a href="https://drive.google.com/file/d/1F6rV3Yys9JwO44W3CfouS_2B99-N52fO/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/80-loi-me-gui-con-gai.png')}}"></a>
+            <a href="https://drive.google.com/file/d/1fg-gjWlJbyS4EFD9qDjh0GkOKltDbeau/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ban-thong-minh-hon-ban-nghi.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1mxJRrbORnucXMHyAKuYM-rlveY2fWHoz/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/vuot-qua-ky-thi-mot-cach-hoan-hao.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1PyNb8B3VuT5UmHBxghpqwWFtjlqbS3A7/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hay-song-cuoc-doi-nhu-ban-muon.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://drive.google.com/file/d/1NKhG4FMorzAcRoTan5lnpbHO4HRPf9Ma/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chuyen-con-meo-day-hai-au-bay.png')}}"></a>
+            <a href="https://drive.google.com/file/d/1UCgbg8xJjZwhi9z1-QQ3CBLRmjOSyPlN/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doi-don-gian-khi-ta-don-gian.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1e-czaXWYZQiBEPEmuDUCbD4PgN7YMQIn/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/dung-day-manh-me.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/15S61ezS1JFYD9Sj41YZhtapdkbe5xvDY/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/tu-duy-tich-cuc-tao-thanh-cong.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1Y4LLZRWTTTkml9jYpmChnmb80EQ3QrOp/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hay-song-o-the-chu-dong.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://drive.google.com/file/d/1XlFxHTmlVE79MLOwMpbwn0iAbUer7kG-/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/kheo-an-noi-se-co-duoc-thien-ha.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1jXi5BG8kAEDWTfsThheKWckLIuKJc8rt/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/khoi-nghiep-thong-minh.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/193Sa6gAJ-gzWQOcfGqz7MaDvzeCBgPZL/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/loi-noi-doi-vi-dai-cua-nao.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1O7T91E5xWnWS-ypJeCEcHCBgDwnkTm6N/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/mac-ke-no-lam-toi-di.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1Adi7f2Mokz6tSyCA_68ow5VATJ6dRLOx/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/noi-the-nao-de-duoc-chao-don.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://drive.google.com/file/d/1VcHT-EUtWxrawSNjTxx_T7p8EnLt2Ddg/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ong-tram-tuoi-treo-qua-cua-so-va-bien-mat.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/14oI3B1sGoeOAf3v0M_Ka83JN5nzpHIxX/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/tu-duy-nhanh-va-cham.png')}}"></a>
+            <a href="https://drive.google.com/file/d/1LGGYmC5a7jglKdBgwypmSj4oFdzi7yGJ/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/khong-gi-la-khong-the.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1ioT1IR0qYr1x54CstUI_PxaUC4cE7rSg/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bac-si-tot-nhat-la-chinh-minh-tap-1.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1R7NeEUJWjjKlw7ngOkrnWuG62caIoLTv/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bac-si-tot-nhat-la-chinh-minh-tap-2.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://drive.google.com/file/d/12Vhe1kXccSU0rKbD7jbzHWH5URMtH2_F/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bac-si-tot-nhat-la-chinh-minh-tap-3.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1BrvPlOLqNHog2_5VUkQnZRDnjknxb6oo/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bac-si-tot-nhat-la-chinh-minh-tap-4.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/16guIJhrdO2A0Gc7Ej2cWjFaNXzhqoM7N/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bac-si-tot-nhat-la-chinh-minh-tap-5.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1Le35xF3MeYwtQtNYtBMOYCwIOwKQIZN3/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bac-si-tot-nhat-la-chinh-minh-tap-6.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1Tm1yRpW7cuM9KSMELfZo7SPEsziWhCAa/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bac-si-tot-nhat-la-chinh-minh-tap-7.jpg')}}"></a>
+        </div>
+        
+        <div class="row">
+            <a href="https://drive.google.com/file/d/1rsQ-_cmOtJxhaEW6BBDcQrjlMTgbW91T/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bac-si-tot-nhat-la-chinh-minh-tap-8.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1rCBhDdjtMaz2MbPSdt6ThZMgBxDCOhrJ/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bac-si-tot-nhat-la-chinh-minh-tap-9.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1AzIg8x_2uaSIhT4vkdYTSB445U9MyJPO/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/206-mon-canh-dinh-duong-cho-tre-em.jfif')}}"></a>
+            <a href="https://drive.google.com/file/d/1ioc0b7k3DCPa54TC4ymF2a7h5Z8KO6JW/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/31-qua-tao-tinh-than.jpg')}}"></a>
+            <a href="https://drive.google.com/file/d/1U3YIKK5yDy-BhoKyFv-4wtMviH1EuG0J/view?usp=drive_link" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/3-nguoi-thay-vi-dai.jpg')}}"></a>
+        </div>
+
+        <!--30 Books--> <!--13/6-->
+
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-bao-lua-u23-thuong-chau-tuyet-trang.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bao-lua-u23-thuong-chau-tuyet-trang.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-10-huyen-thoai-viking-hay-nhat-moi-thoi-dai.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/10-huyen-thoai-viking-hay-nhat-moi-thoi-dai.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-10-huyen-thoai-hy-lap-hay-nhat-moi-thoi-dai.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/10-huyen-thoai-hy-lap-hay-nhat-moi-thoi-dai.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-108-truyen-ngu-ngon-hay-nhat.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/108-truyen-ngu-ngon-hay-nhat.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-horrible-science-vat-ly-cau-chuyen-cua-nhung-luc-bi-hiem.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/horrible-science-vat-ly-cau-chuyen-cua-nhung-luc-bi-hiem.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-horrible-science-thien-nhien-hoang-da.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/horrible-science-thien-nhien-hoang-da.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-horrible-science-sinh-hoc-co-nhung-cau-chuyen-ky-dieu.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/horrible-science-sinh-hoc-co-nhung-cau-chuyen-ky-dieu.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-horrible-science-khong-gian-cac-vi-sao-va-nguoi-ngoai-hanh-tinh.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/horrible-science-khong-gian-cac-vi-sao-va-nguoi-ngoai-hanh-tinh.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-horrible-science-hoa-hoc-mot-vu-no-am-vang.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/horrible-science-hoa-hoc-vu-no-am-vang.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-horrible-science-dien-hoc-cuon-hut-den-toe-lua.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/horrible-science-dien-hoc-cuon-hut-den-toe-lua.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-horrible-science-con-trung-gom-ghiec.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/horrible-science-con-trung-gom-ghiec.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-horrible-science-co-the-chung-ta-mot-the-gioi-ky-thu.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/horrible-science-co-the-chung-ta-mot-the-gioi-ky-thu.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-horrible-histories-nguoi-hy-lap-huyen-thoai.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/horrible-histories-nguoi-hy-lap-huyen-thoai.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-horrible-histories-nguoi-ai-cap-xac-uop-cung-phai-choang-vang.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/horrible-histories-nguoi-ai-cap-xac-uop-cung-phai-choang-vang.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-horrible-geography-nhung-nha-tham-hiem-ham-ho.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/horrible-geography-nhung-nha-tham-hiem-ham-ho.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-horrible-geography-dai-duong-kho-thuong.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/horrible-geography-dai-duong-kho-thuong.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-nao-toi-nay-an-gi-the-luong-nan-cua-loai-an-tap.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nao-toi-nay-an-gi.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-hay-tra-loi-em-tai-sao-tap-1.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hay-tra-loi-em-tai-sao-tap-1.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-hay-tra-loi-em-tai-sao-tap-02.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hay-tra-loi-em-tai-sao-tap-2.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-hay-tra-loi-em-tai-sao-tap-03.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hay-tra-loi-em-tai-sao-tap-3.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-hay-tra-loi-em-tai-sao-tap-05.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hay-tra-loi-em-tai-sao-tap-5.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-hay-tra-loi-em-tai-sao-tap-06.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hay-tra-loi-em-tai-sao-tap-6.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-hay-tra-loi-em-tai-sao-tap-07.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hay-tra-loi-em-tai-sao-tap-7.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-hay-tra-loi-em-tai-sao-tap-08.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hay-tra-loi-em-tai-sao-tap-8.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-hay-tra-loi-em-tai-sao-tap-09.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hay-tra-loi-em-tai-sao-tap-9.jpg')}}"></a>
+        </div>
+        
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-ba-chang-ngoc.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ba-chang-ngoc.jfif')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-bo-la-ba-giup-viec.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bo-la-ba-giup-viec.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-hai-van-dam-duoi-day-bien.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hai-van-dam-duoi-day-bien.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-eragon-1-cau-be-cuoi-rong.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/eragon-cau-be-cuoi-rong-tap-1.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-eragon-2-eldest-dai-ca.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/eragon-eldest-dai-ca-tap-2.jpg')}}"></a>
+        </div>
+
+        <!--30 Books--> <!--19/6-->
+
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-eragon-3-brisingr-hoa-kiem.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/eragon-brisingr-hoa-kiem-tap-3.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-eragon-4-inheritance-di-san-thua-ke.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/eragon-inheritance-di-san-thua-ke-tap-4.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-12-chien-cong-cua-hercule.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/12-chien-cong-cua-hercule.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-tho-ngu-ngon-la-fontaine.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/tho-ngu-ngon-la-fontaine.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/nhasachmienphi-ngay-xua-co-mot-con-bo-camilo-cruz1633173535.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ngay-xua-co-mot-con-bo.png')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-de-co-tri-nho-tot.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/de-co-tri-nho-tot.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-lam-it-duoc-nhieu.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/lam-it-duoc-nhieu.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-doi-ngan-dung-ngu-dai.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doi-ngan-dung-ngu-dai.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-dam-bi-ghet.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/dam-bi-ghet.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-nghe-thuat-dam-phan.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nghe-thuat-dam-phan.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-ban-that-su-co-tai.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ban-that-su-co-tai.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-dinh-ly-cuoi-cung-cua-fermat.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/dinh-ly-cuoi-cung-cua-fermat.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-sinh-vao-ngay-xanh.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/sinh-vao-ngay-xanh.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-the-gioi-luong-tu-ky-bi.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/the-gioi-luong-tu-ky-bi.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-bi-quyet-ve-but-chi.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bi-quyet-ve-but-chi.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-thuc-uong-va-thach-trai-cay-dac-sac.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/thuc-uong-thach-trai-cay-dac-sac.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-nhung-ngay-tho-au.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nhung-ngay-tho-au.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-nhan-to-enzyme-phuong-thuc-song-lanh-manh.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nhan-to-enzyme-phuong-thuc-song-lanh-manh.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-tup-leu-bac-tom.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/tup-leu-bac-tom.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-kieu-hanh-va-dinh-kien.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/kieu-hanh-va-dinh-kien.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-chua-ruoi.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chua-ruoi.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-cuoc-doi-cua-pi.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cuoc-doi-cua-pi.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-tay-sung-cuoi-cung.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/tay-sung-cuoi-cung.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-tren-bo-song-hoang-vang.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/tren-bo-song-hoang-vang.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-hai-so-phan.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hai-so-phan.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-trieu-phu-khu-o-chuot.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/trieu-phu-khu-o-chuot.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-doi-ty-phu.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doi-ty-phu.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-phuc-lanh-cua-dat.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/phuc-lanh-cua-dat.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-noi-dong-song-chay-qua.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/noi-dong-song-chay-qua.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-chin-muoi-ba.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chin-muoi-ba.jpg')}}"></a>
+        </div>
+
+        <!--30 Books--> <!--19/6-->
+
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-chum-nho-phan-no.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chum-nho-phan-no.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-bay-tren-to-chim-cuc-cu.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bay-tren-to-chim-cuc-cu.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-tu-bo-the-gioi-vang.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/tu-bo-the-gioi-vang.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-nha-kho-hanh-va-ga-lang-thang.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nha-kho-hanh-va-ga-lang-thang.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-ngam.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ngam.jpg')}}"></a>
+        </div>
+        
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-ngai-dai-ta-cho-thu.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/dai-ta-cho-thu.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-seu-dau-mua.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/seu-dau-mua.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-hoang-tu-be.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hoang-tu-be.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-cuoc-chien-khuy-cuc.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cuoc-chien-khuy-cuc.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-cho-toi-xin-mot-ve-di-tuoi-tho.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cho-toi-xin-mot-ve-di-tuoi-tho.jpg')}}"></a>
+        </div>
+        
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-bac-si-ai-bo-lit.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bac-si-ai-bo-lit.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-darwin-va-cuoc-hanh-trinh-cua-con-tau-beagle.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/darwin-va-cuoc-hanh-trinh-cua-con-tau-beagle.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-anh-chang-hobbit.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/anh-chang-hobbit.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-rump-cau-be-xe-rom-thanh-vang.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/rump-cau-be-rom-thanh-vang.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-charlotte-va-wilbur.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/charlotte-va-wilbur.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-cai-tet-cua-meo-con.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cai-tet-cua-meo-con.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-tren-sa-mac-va-trong-rung-tham.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/tren-sa-mac-va-trong-rung-tham.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-cuoc-phieu-luu-ky-dieu-cua-nils.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cuoc-phieu-luu-ky-dieu-cua-nils.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-de-men-phieu-luu-ky.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/de-men-phieu-luu-ky.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-nha-tuck-bat-tu.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nha-tuck-bat-tu.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com//arepub/bibi/?book=nhasachmienphi-totto-chan-ben-cua-so.epub" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/totto-chan-ben-cua-so.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com//arepub/bibi/?book=nhasachmienphi-truoc-vong-chung-ket.epub" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/truoc-vong-chung-ket.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com//arepub/bibi/?book=nhasachmienphi-nhung-co-em-gai.epub" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nhung-co-em-gai.jpg')}}"></a>
+            <a href="https://nhasachmienphi.com/doc-online/dao-mong-mo-209740" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/dao-mong-mo.jpg')}}"></a>
+            <a href="https://nhasachmienphi.com/doc-online/quan-go-di-len-209579" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/quan-go-di-len.png')}}"></a>            
+        </div>
+
+        <div class="row">
+            <a href="https://nhasachmienphi.com/doc-online/con-chut-gi-de-nho-209708" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/con-chut-gi-de-nho.jpg')}}"></a>
+            <a href="https://nhasachmienphi.com/doc-online/buoi-chieu-windows-209694" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/buoi-chieu-windows.jpg')}}"></a>
+            <a href="https://nhasachmienphi.com/doc-online/chu-be-rac-roi-209681" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chu-be-rac-roi.jpg')}}"></a>
+            <a href="https://nhasachmienphi.com/doc-online/bo-cau-khong-dua-thu-209666" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bo-cau-khong-dua-thu.jpg')}}"></a>
+            <a href="https://nhasachmienphi.com/doc-online/ngoi-truong-moi-khi-209604" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ngoi-truong-nhu-moi-khi.jpg')}}"></a>
+        </div>
+
+        <!--30 Books--> <!--27/6-->
+
+        <div class="row">
+            <a href="https://nhasachmienphi.com/doc-online/tuoi-tho-du-doi-306812" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/tuoi-tho-du-doi.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-cuoc-doi-dai-lam.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cuoc-doi-dai-lam.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-leu-chong.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/leu-chong.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com//arepub/bibi/?book=nhasachmienphi-phong-tro-ba-nguoi.epub" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/phong-tro-ba-nguoi.jpg')}}"></a>
+            <a href="https://nhasachmienphi.com/doc-online/mat-biec-209567" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/mat-biec.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com//arepub/bibi/?book=nhasachmienphi-ha-do.epub" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ha-do.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com//arepub/bibi/?book=nhasachmienphi-nghe-thuat-bac-thay.epub" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nghe-thuat-bac-thay.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com//arepub/bibi/?book=nhasachmienphi-gio-qua-rang-lieu.epub" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/gio-qua-rang-lieu.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com//arepub/bibi/?book=nhasachmienphi-bong-bong-len-troi.epub" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bong-bong-len-troi.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com//arepub/bibi/?book=nhasachmienphi-mai-nha-xua.epub" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/mai-nha-xua.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://nhasachmienphi.com/doc-online/toi-la-beto-209551" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/toi-la-beto.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com//arepub/bibi/?book=nhasachmienphi-nguoi-tu-be-nho.epub" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nguoi-tu-be-nho.jpg')}}"></a>
+            <a href="https://nhasachmienphi.com/doc-online/toi-thay-hoa-vang-tren-co-xanh-209468" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/toi-thay-hoa-vang-tren-co-xanh.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com//arepub/bibi/?book=nhasachmienphi-buratino-va-chiec-chia-khoa-vang.epub" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/buratino-va-chiec-chia-khoa-vang.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com//arepub/bibi/?book=nhasachmienphi-pippi-tat-dai.epub" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/pippi-tat-dai.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com//arepub/bibi/?book=nhasachmienphi-robinson-crusoe.epub" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/robinson-crusoe.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-lau-dai-bay-cua-phap-su-howl.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/lau-dai-bay-cua-phap-su-howl.jpg')}}"></a>
+            <a href="https://nhasachmienphi.com/doc-online/noi-co-don-cua-cac-so-nguyen-to-221230" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/noi-co-don-cua-cac-nguyen-to.jpg')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-thep-da-toi-the-day.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/thep-da-thay-doi-toi-the-day.jpg')}}"></a>
+            <a href="https://nhasachmienphi.com/doc-online/harry-potter-va-hon-da-phu-thuy-tap-1-221629" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/harry-potter-va-hon-da-phu-thuy.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://nhasachmienphi.com/doc-online/harry-potter-va-phong-chua-bi-mat-tap-2-221648" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/harry-potter-va-phong-chua-bi-mat.jpg')}}')}}"></a>
+            <a href="https://nhasachmienphi.com/doc-online/harry-potter-va-ten-tu-nhan-nguc-azkaban-tap-3-221667" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/harry-potter-va-ten-tu-nguc-azkabam.jpg')}}')}}"></a>
+            <a href="https://nhasachmienphi.com/doc-online/harry-potter-va-chiec-coc-lua-tap-4-221690" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/harry-potter-va-chiec-coc-lua.jpg')}}')}}"></a>
+            <a href="https://nhasachmienphi.com/doc-online/harry-potter-va-hoi-phuong-hoang-tap-5-221727" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/harry-potter-va-hoi-phuong-hoang.jpg')}}')}}"></a>
+            <a href="https://nhasachmienphi.com/doc-online/harry-potter-va-hoang-tu-lai-tap-6-221766" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/harry-potter-va-hoang-tu-lai.jpg')}}')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://nhasachmienphi.com/doc-online/harry-potter-va-bao-boi-tu-than-tap-7-221797" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/harry-potter-va-bao-boi-tu-than.jpg')}}')}}"></a>
+            <a href="https://file.nhasachmienphi.com//arepub/bibi/?book=nhasachmienphi-lon-len-tren-dao-vang.epub" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/lon-tren-dao-vang.jpg')}}')}}"></a>
+            <a href="https://file.nhasachmienphi.com//arepub/bibi/?book=nhasachmienphi-truyen-cuoi-dan-gian-viet-nam.epub" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/truyen-cuoi-dan-gian-viet-nam.jpg')}}')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-truyen-xien-bot.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/truyen-xien-bot.jpg')}}')}}"></a>
+            <a href="https://file.nhasachmienphi.com/pdf/nhasachmienphi-trang-quynh.pdf" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/trang-quynh.jpg')}}')}}"></a>
+        </div>
+
+        <!--30 Books--> <!--27/6-->
+
+        <div class="row">
+            <a href="https://file.nhasachmienphi.com//arepub/bibi/?book=nhasachmienphi-trang-lon.epub" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/trang-lon.jpg')}}')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=cbda5b" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/gulliver-du-ky.jpg')}}')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=bc1ddd" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/su-tich-con-su-tu.jpg')}}')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=5d5bd2" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nhung-cuoc-phieu-luu-cua-tom-sawyer.jpg')}}')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=a1be3d" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nhung-cuoc-phieu-luu-cua-huckleberry-tinn.jpg')}}')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=abc3a2" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nhung-cuoc-phieu-luu-cua-cao-renard.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=5d21e3" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bi-vo.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=35be3b" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/jack-va-cay-dau-than.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=e4da1d" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hoa-hong-va-chiec-nhan.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=2ac313" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chua-te-nhung-chiec-nhan-quyen-1.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=352345" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chua-te-nhung-chiec-nhan-quyen-2.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=21ac15" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chua-te-nhung-chiec-nhan-quyen-3.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=4aae51" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/danh-phap-trong-chua-te-nhung-chiec-nhan.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=12dc22" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/anh-em-nha-karamazov.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=4c12cc" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cay-cam-ngot-cua-toi.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=aee421" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ki-vi-nui-deo.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=dc34dd" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/xu-con-nguoi.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=ccc5cc" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cuoc-doi-ky-la-cua-nikola-tesla.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=abe3d4" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/800-ngay-tren-mat-tran-phia-dong.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=1c5514" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/1001-buc-thu-viet-cho-tuong-lai.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=5abad3" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cuoc-doi-dau-10-doi-tong-thong-my-va-nhung-am-muu-am-sat-cua-cia-fidel.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=b12ad2" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/tro-ve-noi-hoang-da.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=e5e111" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hay-hoc-nhu-thang-ngoc-va-uoc-mo-nhu-thien-tai.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=aceba3" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/co-be-ban-diem.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=db4e43" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hau-due-than-den-djinn-xanh-babylon.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=314a4a" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/than-thoai-bac-au.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=231b44" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chuyen-co-tich-danh-cho-nguoi-lon.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=d32eea" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/mat-ma-phu-thuy.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=1aa31c" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ruoi-trau.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=31244b" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bo-gia.jpg')}}"></a>
+        </div>
+
+        <!--30 Books--> <!--7/7-->
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=e34314" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cuoc-song-khong-gioi-han.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=14de3c" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doi-thay-doi-khi-chung-ta-thay-doi-tap-1.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=2e5114" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doi-thay-doi-khi-chung-ta-thay-doi-tap-2.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=445aab" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doi-thay-doi-khi-chung-ta-thay-doi-tap-3.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=23341d" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doi-thay-doi-khi-chung-ta-thay-doi-tap-4.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=a3a244" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doi-thay-doi-khi-chung-ta-thay-doi-tap-5.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=adbcce" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doi-thay-doi-khi-chung-ta-thay-doi-tap-6.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=a5dc45" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nguoi-giau-co-nhat-thanh-babylon.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=c3ccb3" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nguoi-ban-hang-vi-dai-nhat-the-gioi.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=cb1a54" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/am-thanh-va-cuong-no.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=31d1c3" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chien-tranh-va-hoa-binh.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=bdc2c5" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doi-tho.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=ba2cc5" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bai-giang-cuoi-cung.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=3ba353" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/di-tim-le-song.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=344343" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cha-va-con.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=d3e3ce" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/xu-cat.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=d25a33" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/451-do-f.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=eab5ae" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hat-giong-tam-hon-tap-1.jpg')}}"></a> 
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=4da45a" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hat-giong-tam-hon-tap-2.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=db3515" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hat-giong-tam-hon-tap-3.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=ea5dec" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hat-giong-tam-hon-tap-4.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=e12bcb" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hat-giong-tam-hon-tap-5.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=b2d2c2" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hat-giong-tam-hon-tap-6.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=b3e14b" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hat-giong-tam-hon-tap-7.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=cc3511" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hat-giong-tam-hon-tap-8.jpg')}}"></a>
+        </div>
+        
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=3d5aa1" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hat-giong-tam-hon-tap-9.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=135b45" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hat-giong-tam-hon-tap-10.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=15dcb4" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hat-giong-tam-hon-tap-11.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=e5ec32" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ke-trom-sach.png')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=5d5b4c" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cuu-tinh-xu-cat.jpg')}}"></a>
+        </div>
+
+        <!--30 Books--> <!--7/7-->
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=bce54e" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/vi-sao-ho-thanh-cong-tap-1.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=22bdca" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/vi-sao-ho-thanh-cong-tap-2.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=3b2453" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/day-con-lam-giau-tap-1.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=1ab241" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/day-con-lam-giau-tap-2.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=55c353" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/day-con-lam-giau-tap-3.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=bdec24" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/vat-chat-toi-cua-ngai-bac-cuc-quang.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=51dcc5" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/vat-chat-toi-cua-ngai-con-dao-ki-ao.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=5eebb3" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/vat-chat-toi-cua-ngai-ong-nhom-ho-phach.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=3b2d3a" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cho-dan-duong-phieu-luu-ky-tap-1.png')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=ab424e" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cho-dan-duong-phieu-luu-ky-tap-2.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=2dd3c4" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/14-tap-1.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=4e5baa" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/14-tap-2.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=3cec1d" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cau-chuyen-phia-sau-giay.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=5cd2e5" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cau-chuyen-phia-sau-thoi-gian.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=ab4dca" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cau-chuyen-phia-sau-nha-ve-sinh.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=1b3dba" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cau-chuyen-phia-sau-chocolate.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=1b1ba5" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cau-chuyen-phia-sau-banh-mi.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=451514" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ami-cau-be-cua-cac-vi-sao.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=543cd1" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chia-se-tam-hon-va-qua-tang-cuoc-song-tap-1.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=eccda1" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chia-se-tam-hon-va-qua-tang-cuoc-song-tap-2.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=3ba3dc" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chia-se-tam-hon-va-qua-tang-cuoc-song-tap-3.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=e544e1" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bi-an-cac-vi-sao-thay-phu-thuy-qadehar.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=edadc3" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bi-an-cac-vi-sao-ngai-sha.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=ea1d11" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bi-an-cac-vi-sao-bo-mat-that-cua-bong-toi.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=2e5dba" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chuyen-xu-langbiang-tap-1.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=1e4bad" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chuyen-xu-langbiang-tap-2.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=adc2d4" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chuyen-xu-langbiang-tap-3.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=53ccab" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chuyen-xu-langbiang-tap-4.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=dd2ca5" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nhung-dieu-ban-nen-biet-ve-co-the-con-nguoi.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=bcdcc3" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nhung-dieu-ban-nen-biet-ve-khi-hau-va-thoi-tiet.jpg')}}"></a>
+        </div>
+
+        <!--30 Books--> <!--14/7-->
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=5bbe11" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nhung-dieu-ban-nen-biet-ve-trai-dat.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=3545a5" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nhung-dieu-ban-nen-biet-ve-the-gioi-thuc-vat.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=ccc2bd" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nhung-dieu-ban-nen-biet-ve-khong-gian.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=3dba23" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nhung-dieu-ban-nen-biet-ve-khoa-hoc-va-cong-nghe.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=b23abb" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bi-quyet-thanh-cong-danh-cho-tuoi-teen.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=b2cb25" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/biet-tat-tan-tat-chuyen-trong-thien-ha.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=be4eb3" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/80-ngay-vong-quanh-the-gioi.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=bbd355" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/zazie-trong-tau-dien-ngam.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=da24d1" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/vo-chong-lao-twit.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=dd5413" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/vichia-maleev-o-nha-va-o-truong.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=4de243" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/truong-ca-achilles.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=e33bda" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/tomech-va-thu-linh-tia-chop-den.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=2aa32e" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/tieng-noi-giua-dem-khuya.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=ac5c5a" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/thay-phu-thuy-di-trong-thanh-pho.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=4bc53d" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/sau-nguoi-ban-dong-hanh-va-ban-nhac-rock-en-stock.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=34ad45" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/sau-nguoi-ban-dong-hanh-t25.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=e3a355" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/o-noi-bien-ca.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=2a35bb" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nhung-truyen-ngan-kinh-dien-ba-lan.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=acac5e" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nhung-chuyen-ky-dieu.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=baaad2" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nhung-chang-trai-nho.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=3d5532" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nguoi-ban-bi-an.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=e4412e" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ngoi-nha-cua-nhung-nguoi-ti-hon.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=3c253a" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ngoi-nha-cay.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=c14b3d" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/matilda-co-be-nghich-ngom.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=c2cba2" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hop-chat-mau-da-cam.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=231442" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hoc-vien-khac-nghiet.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=443241" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hoang-tu-caspian.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=c133c5" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hachiko-chu-cho-doi-cho.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=4bdaa1" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/coxchia-lun.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=2e542e" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/con-ngua-va-cau-be.jpg')}}"></a>
+        </div>
+
+        <!--10 Books--> <!--15/7-->
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=ed1444" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chu-be-trong-vali.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=5ed2d2" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chang-hai-au-ky-dieu.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=54ee3a" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cay-cau-den-xu-so-than-tien.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=1d1132" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/kinh-van-hoa.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=45acbc" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nguoi-quang-di-an-mi-quang.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=5de5a2" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/la-nam-trong-la.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=cc1ea2" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/co-hai-con-meo-ngoi-ben-cua-so.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=3a3deb" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/nhung-chang-trai-xau-tinh.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=424e1c" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ba-lo-mau-xanh.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=12a3c3" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cay-chuoi-non-di-giay-xanh.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=bdeace" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bien-nien-su-sach-ve-bo-ba.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=352411" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bien-nien-su-vac-dau-den.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=44dea1" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bien-nien-su-lau-dai-llyr.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=da1c45" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bien-nien-su-taran-nguoi-lang-thang.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=333da5" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bien-nien-su-duc-thuong-hoang.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=daca35" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/leu-chong.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=5d21e3" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bi-vo.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=1cb2be" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/lao-tu-dao-duc-kinh.png')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=4c12cc" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cay-cam-ngot-cua-toi.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=bedb51" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/tay-du-ki.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=2ac313" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chua-te-chiec-nhan-doan-ho-nhan.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=352345" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chua-te-chiec-nhan-hai-toa-thap.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=21ac15" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chua-te-chiec-nhan-nha-vua-tro-ve.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=4aae51" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/danh-phap-trong-chua-te-nhung-chiec-nhan.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=252ede" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/lao-hac.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=431e2d" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/muoi-bay-khoanh-khac-mua-xuan.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=35be3b" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/jack-va-cay-dau-than.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=eddb51" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/khong-so-phan.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=e4da1d" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hoa-hong-va-chiec-nhan.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=25445a" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/doi-nhu-mot-tro-dua.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=c5ece5" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/di-san-cua-eszter.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=4dc151" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/con-hui.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=ddb345" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chuyen-nguoi-tuy-nu.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=cdb54a" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chua-ruoi.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=143bbe" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/thien-than-noi-loan.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=e153ad" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ngay-cuoi-cung-cua-mot-tu-tu.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=42a5da" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ba-gia-pha-luat.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=ed3d23" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/anh-hung-xa-dieu.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=c1b544" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/su-thi-iliad.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=1da5e5" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/chiec-la-cuoi-cung.jpg')}}"></a>
+        </div>
+
+        <!--30 Books--> <!--8/9-->
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=2e254e" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/co-be-fadette.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=2bcbb3" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/tren-bien-khoi-duoi-da-tham.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=54ee3a" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cay-cau-den-xu-so-than-tien.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=5bbdb3" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cau-be-danh-giac-co-den.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=ae325d" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cac-cau-be-cua-jo.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=1da1d1" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ben-via-he.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=cceeaa" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ben-duong-bien-gioi.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=d4a31c" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bat-tay-trong-suong-mu.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=bc354d" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/anh-chang-hobbit.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=aa21b1" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/5-tuan-tren-khinh-khi-cau.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=a414b1" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/dat-rung-phuong-nam.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=44dcbc" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bay-buoc-toi-mua-he.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=be4eb3" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/80-ngay-vong-quanh-the-gioi.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=4eebde" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/thien-than-nho-cua-toi.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=a4e213" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/co-kien-trinh-sat.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=51ead3" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cuoc-tham-hiem-vao-long-dat.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=b2ad41" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/bi-mat-dau-lua.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=1dae5c" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cuoc-phieu-luu-cuoi-cung-cua-feynman.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=a5251d" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cuoc-phieu-luu-cua-tau-ngam.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=2ede2b" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/de-men-phieu-luu-ky.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=b543d3" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/phieu-luu-ngoai-than-the.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=aee421" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/ki-vi-nui-deo.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=dc34dd" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/xu-con-nguoi.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=d4a44a" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/su-nghiep-va-cuoc-doi.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=5d45d5" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/diep-vien-hoan-hao-x6.jpg')}}"></a>
+        </div>
+
+        <div class="row">
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=ccc5cc" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/cuoc-doi-ky-la-cua-nikola-tesla.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=abe3d4" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/800-ngay-tren-mat-tran-phia-dong.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=1c5514" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/1001-buc-thu-viet-cho-tuong-lai.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=a3c125" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/hoi-ky-son-nam-toan.jpg')}}"></a>
+            <a href="https://thuviensach.vn/pdf/viewer.php?id=55edd5" target="_blank"><img class="sach" src="{{url_for('static', filename='/Image/tu-nhan-cua-nha-nuoc-nhat-ky-bi-mat-cua-trieu-tu-duong.jpg')}}"></a>
+        </div>
+
+    </div>
+
+    <!-- -------------------------------------------------------------------------------------- -->
+    
+    <footer>
+        <div class="footer-content">
+            <h3>V-LIBRARY</h3>
+            <p>Với mong muốn đem trang sách đến với các em, đồng thời hỗ trợ cung cấp nguồn tài liệu chính thống tới thầy cô, "V-Library" là giải pháp hiện đại cho những vấn đề xưa cũ.</p>
+            <ul class="socials">
+                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100090439011915"><img src="{{url_for('static', filename='/Image/facebook-icon.png')}}" width="30px"></a></li>
+                <li><a href="#"><img src="{{url_for('static', filename='/Image/instagram-icon.png')}}" width="30px"></a></li>
+                <li><a href="#"><img src="{{url_for('static', filename='/Image/youtube-icon.png')}}" width="30px"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
